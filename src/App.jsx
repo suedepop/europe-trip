@@ -18,7 +18,8 @@ export default function App() {
     { key: 'paris', days: [5, 6] },
     { key: 'europa', days: [7, 8] },
     { key: 'london', days: [9, 10, 11] },
-    { key: 'transit', days: [12] },
+    { key: 'dublin', days: [12] },
+    { key: 'transit', days: [13] },
   ]
 
   return (
@@ -29,7 +30,7 @@ export default function App() {
           <div className="sidebar-logo">✈</div>
           <div className="sidebar-title-block">
             <div className="sidebar-title">EUROPE 2026</div>
-            <div className="sidebar-sub">Jun 30–Jul 12 · Family of Three</div>
+            <div className="sidebar-sub">Jun 30–Jul 13 · Family of Three</div>
           </div>
           <button className="sidebar-toggle" onClick={() => setSidebarOpen(o => !o)}>
             {sidebarOpen ? '◀' : '▶'}

@@ -121,6 +121,18 @@ export default function CancellationPolicies() {
       notes: "DO NOT resell on Viagogo or unauthorized platforms — entire original booking will be canceled and entry refused. Use official resale channel only if available.",
     },
     {
+      name: "Conrad Dublin",
+      date: "Jul 12",
+      type: "hotel",
+      paid: "$505.73 − $300 Amex credit = $205.73 net",
+      deadline: "Check confirmation for deadline",
+      penalty: "Varies by rate — typically 24–48 hrs before check-in",
+      refund: "Refund to original payment method",
+      flexibility: "check",
+      status: "not_booked",
+      notes: "Hilton Conrad property. Check your specific rate's cancellation terms at hilton.com. Amex $300 statement credit applies separately — verify credit posts even if booking is canceled.",
+    },
+    {
       name: "Ryanair — LTN → DUB",
       date: "Jul 12",
       type: "flight",
@@ -134,7 +146,7 @@ export default function CancellationPolicies() {
     },
     {
       name: "Aer Lingus — DUB → PIT (Avios)",
-      date: "Jul 12",
+      date: "Jul 13",
       type: "flight",
       paid: "60K Avios (20K/pp)",
       deadline: "24 hours before departure",
@@ -161,7 +173,7 @@ export default function CancellationPolicies() {
       <div className="costs-header">
         <div className="costs-badge">BOOKINGS</div>
         <h1 className="costs-title">Bookings</h1>
-        <p className="costs-sub">Family of Three · Jun 30–Jul 12, 2026 · Booking status, deadlines, and cancellation terms</p>
+        <p className="costs-sub">Family of Three · Jun 30–Jul 13, 2026 · Booking status, deadlines, and cancellation terms</p>
         <p className="costs-note">Always verify policies against your actual booking confirmations</p>
       </div>
 
