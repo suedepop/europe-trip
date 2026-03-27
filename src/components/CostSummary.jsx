@@ -30,8 +30,8 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
           <div className="hl-label">Hotels (cash)</div>
-          <div className="hl-value">~$4,157</div>
-          <div className="hl-note">Disney + Krønasår + Conrad</div>
+          <div className="hl-value">~$4,338</div>
+          <div className="hl-note">Disney + Krønasår + College Green</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
           <div className="hl-icon">💎</div>
@@ -94,8 +94,8 @@ export default function CostSummary() {
             <span>$2,554.98</span>
           </div>
           <div className="gt-row">
-            <span>Conrad Dublin (1 night — $505.73 − $300 Amex credit)</span>
-            <span>$205.73 net</span>
+            <span>The College Green Hotel Dublin (1 night — $686.52 − $300 Amex credit)</span>
+            <span>$386.52 net</span>
           </div>
           <div className="gt-row">
             <span>Hyatt Place Paris CDG (3 nights — points)</span>
@@ -116,7 +116,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$6,352–6,552</span>
+            <span>~$6,533–6,733</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
