@@ -410,11 +410,23 @@ export const SEGMENTS = {
 export const COST_SUMMARY = [
   { category: "FLIGHTS", items: [
     { label: "PIT → CDG (Jul 1) — United UA3449 / UA330", cost: "$1,875 cash" },
-    { label: "Ringsheim → Paris TGV (Jul 9)", cost: "~€90–150 family" },
-    { label: "Paris → London Eurostar (Jul 9)", cost: "~£150–250 family" },
     { label: "LTN → DUB (Jul 12) — Ryanair", cost: "$258 ($86/pp × 3)" },
     { label: "DUB → PIT (Jul 12) — Aer Lingus direct", cost: "60K Avios pts (20K/pp × 3)" },
-  ], total: "~$2,550–2,700 cash + 60K Avios pts" },
+  ], total: "$2,133 cash + 60K Avios pts" },
+  { category: "TRAINS", items: [
+    { label: "Ringsheim/Europa-Park → Paris Gare de l'Est — TGV (Jul 9)", cost: "~€90–150 family" },
+    { label: "Paris Gare du Nord → London St Pancras — Eurostar (Jul 9)", cost: "~£150–250 family" },
+  ], total: "~$420–510" },
+  { category: "OTHER GROUND TRANSPORT", items: [
+    { label: "CDGVal + TGV: CDG → Chessy (Jul 2)", cost: "~€75 family" },
+    { label: "RER B: CDG ↔ Central Paris (Jul 5–7, multiple trips)", cost: "~€130 family" },
+    { label: "TGV: Chessy → CDG (Jul 5)", cost: "~€20 family" },
+    { label: "TGV: Paris Gare de l'Est → Ringsheim (Jul 7)", cost: "~€150–210 family" },
+    { label: "Taxi: Krønasår → BSL (Jul 8, if needed)", cost: "~€70" },
+    { label: "Elizabeth Line / Tube: London various (Jul 9–12)", cost: "~£100 family" },
+    { label: "Thameslink: London → Knebworth return (Jul 11)", cost: "~£30/pp" },
+    { label: "Thameslink: Farringdon → Luton Airport Parkway (Jul 12)", cost: "~£48 family" },
+  ], total: "~$650–720" },
   { category: "ACCOMMODATION", items: [
     { label: "Sequoia Lodge DLP — 3 nights + 4-day park hopper package", cost: "$2,554.98" },
     { label: "Hyatt Place Paris CDG Airport — 2 nights (14,550/night)", cost: "29,100 Hyatt pts" },

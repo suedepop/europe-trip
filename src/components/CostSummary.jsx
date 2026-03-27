@@ -24,8 +24,8 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#C9A84C' }}>
           <div className="hl-icon">✈</div>
           <div className="hl-label">Flights (cash)</div>
-          <div className="hl-value">~$2,550</div>
-          <div className="hl-note">+ 60K Avios + trains</div>
+          <div className="hl-value">$2,133</div>
+          <div className="hl-note">+ 60K Avios pts</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
@@ -70,20 +70,20 @@ export default function CostSummary() {
       <div className="grand-total">
         <div className="gt-inner">
           <div className="gt-row">
-            <span>Flights — United PIT→CDG (cash)</span>
-            <span>$1,875</span>
+            <span>Flights (cash) — United + Ryanair</span>
+            <span>$2,133</span>
           </div>
           <div className="gt-row">
-            <span>Flights — Ryanair LTN→DUB (cash)</span>
-            <span>$258</span>
+            <span>Flights (points) — Aer Lingus DUB→PIT</span>
+            <span className="gt-pts">60K Avios (20K/pp)</span>
           </div>
           <div className="gt-row">
-            <span>Trains — Ringsheim→Paris TGV + Paris→London Eurostar</span>
+            <span>Trains — TGV + Eurostar (Jul 9)</span>
             <span>~$420–510</span>
           </div>
           <div className="gt-row">
-            <span>Flights — Aer Lingus DUB→PIT (points)</span>
-            <span className="gt-pts">60K Avios (20K/pp)</span>
+            <span>Other ground transport</span>
+            <span>~$650–720</span>
           </div>
           <div className="gt-row">
             <span>Disney package (Sequoia Lodge + 4-day tickets)</span>
@@ -104,10 +104,6 @@ export default function CostSummary() {
           <div className="gt-row">
             <span>Attractions &amp; activities</span>
             <span>~$180–220</span>
-          </div>
-          <div className="gt-row">
-            <span>Ground transport in Europe</span>
-            <span>~$650–720</span>
           </div>
           <div className="gt-divider" />
           <div className="gt-row grand">
