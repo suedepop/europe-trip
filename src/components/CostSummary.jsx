@@ -42,7 +42,7 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#1A6B3A' }}>
           <div className="hl-icon">🎢</div>
           <div className="hl-label">Attractions</div>
-          <div className="hl-value">~$180–220</div>
+          <div className="hl-value">~$220–260</div>
           <div className="hl-note">excl. pre-purchased shows</div>
         </div>
       </div>
@@ -111,12 +111,12 @@ export default function CostSummary() {
           </div>
           <div className="gt-row">
             <span>Attractions &amp; activities</span>
-            <span>~$180–220</span>
+            <span>~$220–260</span>
           </div>
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$6,533–6,733</span>
+            <span>~$6,573–6,773</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>

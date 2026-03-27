@@ -441,14 +441,15 @@ export const DAYS = [
     center: [43.0, -30.0],
     zoom: 3,
     stops: [
-      { lat: 53.3389, lon: -6.2595, name: "The College Green Hotel — Checkout", time: "10:00 AM", detail: "Final breakfast · checkout · taxi to Dublin Airport", icon: "🏨" },
-      { lat: 53.4264, lon: -6.2499, name: "Dublin Airport (DUB)", time: "11:00 AM", detail: "Aer Lingus Terminal 2 · US Preclearance", icon: "✈" },
+      { lat: 53.3441, lon: -6.2593, name: "The College Green Hotel — Checkout", time: "10:00 AM", detail: "Final breakfast · checkout", icon: "🏨" },
+      { lat: 53.3439, lon: -6.2546, name: "Trinity College — Book of Kells", time: "10:15 AM", detail: "📅 PRE-BOOK · Ireland's most famous manuscript · stunning Long Room library", icon: "🏛" },
+      { lat: 53.4264, lon: -6.2499, name: "Dublin Airport (DUB)", time: "12:30 PM", detail: "Aer Lingus Terminal 2 · US Preclearance", icon: "✈" },
       { lat: 40.4957, lon: -80.2329, name: "Pittsburgh International (PIT)", time: "6:40 PM", detail: "Arrive ~6:40pm EDT · pre-cleared in Dublin · collect car", icon: "🏠" },
     ],
     entries: [
       { time: "9:00 AM", title: "Final breakfast at The College Green Hotel", detail: "Last morning. No rush — flight is at 3:40pm.", cost: "" },
       { time: "10:00 AM", title: "Checkout The College Green Hotel", detail: "1-night stay complete.", cost: "" },
-      { time: "10:15 AM", title: "Optional — Trinity College + Book of Kells", detail: "10-min walk from hotel. PRE-BOOK at tcd.ie. Adults ~€18, under-12 free. The Long Room library is breathtaking. Allow 1–1.5 hrs.", cost: "~€36 adults" },
+      { time: "10:15 AM", title: "Trinity College + Book of Kells", detail: "Steps from the hotel. PRE-BOOK at tcd.ie. Adults ~€18, under-12 free. The Long Room library is breathtaking. Allow 1–1.5 hrs.", cost: "~€36 adults" },
       { time: "12:00 PM", title: "Taxi to Dublin Airport", detail: "~25 min, ~€25–30. Or Aircoach from city centre ~€8/pp.", cost: "~€25–30 taxi" },
       { time: "12:30 PM", title: "Arrive Dublin Airport Terminal 2", detail: "Aer Lingus operates from T2. Check in, bag drop.", cost: "" },
       { time: "1:00 PM", title: "US Preclearance at Dublin Airport", detail: "Dublin has US Customs & Border Protection on-site — you clear US immigration BEFORE boarding. Allow 60–90 min. Arrive PIT as a domestic passenger.", cost: "" },
@@ -456,7 +457,7 @@ export const DAYS = [
       { time: "3:40 PM", title: "✈ Aer Lingus departs DUB → PIT (direct)", detail: "Direct flight ~8 hrs. 20,000 Avios points per person.", cost: "60K Avios pts" },
       { time: "6:40 PM", title: "Arrive Pittsburgh International (PIT)", detail: "Arrive as domestic passenger (pre-cleared in Dublin). Collect bags, retrieve car from parking.", cost: "" },
     ],
-    note: "Dublin's US Preclearance is a huge perk — no immigration queues at PIT. You walk off the plane and go straight to baggage claim. Optional Trinity College visit if time allows before heading to airport.",
+    note: "Dublin's US Preclearance is a huge perk — no immigration queues at PIT. You walk off the plane and go straight to baggage claim. PRE-BOOK Book of Kells at tcd.ie — it sells out in July.",
   },
 ]
 
@@ -503,5 +504,6 @@ export const COST_SUMMARY = [
     { label: "Avenue Q — Shaftesbury Theatre", cost: "Pre-purchased" },
     { label: "Iron Maiden EDDFEST — Knebworth", cost: "Pre-purchased" },
     { label: "Disney Premier Access (Avengers + Crush's, est.)", cost: "~€48" },
-  ], total: "~$180–220" },
+    { label: "Trinity College / Book of Kells (2 adults ~€18)", cost: "~€36" },
+  ], total: "~$220–260" },
 ]
