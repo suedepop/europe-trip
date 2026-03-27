@@ -15,8 +15,8 @@ export default function App() {
     { key: 'disney', days: [1, 2, 3] },
     { key: 'paris', days: [4, 5] },
     { key: 'europa', days: [6, 7] },
-    { key: 'amsterdam', days: [8] },
-    { key: 'london', days: [9, 10, 11, 12] },
+    { key: 'london', days: [8, 9, 10] },
+    { key: 'transit', days: [11] },
   ]
 
   return (
