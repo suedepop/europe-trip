@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react'
 import { DAYS, TRIP, SEGMENTS } from './data/itinerary'
 import DayView from './components/DayView'
 import CostSummary from './components/CostSummary'
+import CancellationPolicies from './components/CancellationPolicies'
 
 export default function App() {
   const [activeDay, setActiveDay] = useState(1)
   const [showCosts, setShowCosts] = useState(false)
+  const [showPolicies, setShowPolicies] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
 
   const day = DAYS.find(d => d.num === activeDay)
@@ -48,15 +50,15 @@ export default function App() {
                   return (
                     <button
                       key={n}
-                      className={`day-btn ${activeDay === n && !showCosts ? 'active' : ''}`}
-                      style={activeDay === n && !showCosts ? {
+                      className={`day-btn ${activeDay === n && !showCosts && !showPolicies ? 'active' : ''}`}
+                      style={activeDay === n && !showCosts && !showPolicies ? {
                         background: seg.color,
                         borderColor: seg.color,
                       } : { borderColor: seg.color + '40' }}
-                      onClick={() => { setActiveDay(n); setShowCosts(false) }}
+                      onClick={() => { setActiveDay(n); setShowCosts(false); setShowPolicies(false) }}
                     >
                       <span className="day-btn-num" style={
-                        activeDay === n && !showCosts ? {} : { color: seg.color }
+                        activeDay === n && !showCosts && !showPolicies ? {} : { color: seg.color }
                       }>D{n}</span>
                       <span className="day-btn-date">{d.date.replace(/^\w+ /, '')}</span>
                       <span className="day-btn-title">{d.title}</span>
@@ -72,11 +74,20 @@ export default function App() {
             <button
               className={`day-btn ${showCosts ? 'active' : ''}`}
               style={showCosts ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => setShowCosts(true)}
+              onClick={() => { setShowCosts(true); setShowPolicies(false) }}
             >
               <span className="day-btn-num" style={showCosts ? {} : { color: '#C9A84C' }}>💰</span>
               <span className="day-btn-date">Costs</span>
               <span className="day-btn-title">Full Cost Summary</span>
+            </button>
+            <button
+              className={`day-btn ${showPolicies ? 'active' : ''}`}
+              style={showPolicies ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
+              onClick={() => { setShowPolicies(true); setShowCosts(false) }}
+            >
+              <span className="day-btn-num" style={showPolicies ? {} : { color: '#C9A84C' }}>📋</span>
+              <span className="day-btn-date">Policies</span>
+              <span className="day-btn-title">Cancellation Policies</span>
             </button>
           </div>
         </nav>
@@ -86,6 +97,8 @@ export default function App() {
       <main className="main">
         {showCosts ? (
           <CostSummary />
+        ) : showPolicies ? (
+          <CancellationPolicies />
         ) : (
           <DayView day={day} />
         )}
