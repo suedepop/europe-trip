@@ -24,8 +24,8 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#C9A84C' }}>
           <div className="hl-icon">✈</div>
           <div className="hl-label">Flights (cash)</div>
-          <div className="hl-value">~$2,133</div>
-          <div className="hl-note">+ 60K Avios + BSL TBD</div>
+          <div className="hl-value">~$2,550</div>
+          <div className="hl-note">+ 60K Avios + trains</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
@@ -78,16 +78,12 @@ export default function CostSummary() {
             <span>$258</span>
           </div>
           <div className="gt-row">
-            <span>Flights — BSL→LHR (cash)</span>
-            <span>TBD</span>
+            <span>Trains — Strasbourg→Paris TGV + Paris→London Eurostar</span>
+            <span>~$420–510</span>
           </div>
           <div className="gt-row">
             <span>Flights — Aer Lingus DUB→PIT (points)</span>
             <span className="gt-pts">60K Avios (20K/pp)</span>
-          </div>
-          <div className="gt-row">
-            <span>PIT parking (12 days, fixed rate)</span>
-            <span>$150</span>
           </div>
           <div className="gt-row">
             <span>Disney package (Sequoia Lodge + 4-day tickets)</span>
@@ -113,14 +109,10 @@ export default function CostSummary() {
             <span>Ground transport in Europe</span>
             <span>~$650–720</span>
           </div>
-          <div className="gt-row">
-            <span>Miscellaneous: tips, souvenirs, incidentals</span>
-            <span>~$400–600</span>
-          </div>
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$7,464–7,774 + BSL→LHR TBD</span>
+            <span>~$7,334–7,534</span>
           </div>
           <div className="gt-row grand pts">
             <span>HYATT POINTS (Chase UR → Hyatt 1:1)</span>
