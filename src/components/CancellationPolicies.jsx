@@ -73,10 +73,10 @@ export default function CancellationPolicies() {
       notes: "Check confirmation for rate type. Package bookings with park tickets may fall under restricted rate terms. Contact reservation.europapark.de to confirm.",
     },
     {
-      name: "Eurostar — Paris → London",
+      name: "Eurostar ES 9027 — Paris → London",
       date: "Jul 9",
       type: "train",
-      paid: "~£150–250 family",
+      paid: "$355.36",
       deadline: "7 days before departure (Jul 2) for Standard refund",
       penalty: "Standard: £25/pp refund fee. Standard Premier: no fee within 48 hrs. SNAP: non-refundable.",
       refund: "Refund to original payment, up to 28 days processing",

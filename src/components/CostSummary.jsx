@@ -82,8 +82,8 @@ export default function CostSummary() {
             <span className="gt-pts">60K Avios (20K/pp)</span>
           </div>
           <div className="gt-row">
-            <span>Trains — TGV + Eurostar (Jul 9)</span>
-            <span>~$420–510</span>
+            <span>Trains — TGV INOUI 9530 + Eurostar ES 9027 (Jul 9)</span>
+            <span>~$612</span>
           </div>
           <div className="gt-row">
             <span>Other ground transport</span>
@@ -116,7 +116,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$6,573–6,773</span>
+            <span>~$6,765–6,865</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
