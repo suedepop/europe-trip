@@ -23,26 +23,26 @@ export default function CostSummary() {
       <div className="cost-highlights">
         <div className="highlight-card" style={{ borderColor: '#C9A84C' }}>
           <div className="hl-icon">✈</div>
-          <div className="hl-label">All Flights</div>
-          <div className="hl-value">$0</div>
-          <div className="hl-note">Amex MR points</div>
+          <div className="hl-label">Flights (cash)</div>
+          <div className="hl-value">~$2,133</div>
+          <div className="hl-note">+ 60K Avios + BSL TBD</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
           <div className="hl-label">Hotels (cash)</div>
-          <div className="hl-value">~$3,596</div>
+          <div className="hl-value">~$3,951</div>
           <div className="hl-note">Disney + Krønasår</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
           <div className="hl-icon">💎</div>
           <div className="hl-label">Hyatt Points</div>
-          <div className="hl-value">~75–105K</div>
-          <div className="hl-note">Chase UR → Hyatt 1:1</div>
+          <div className="hl-value">104,100</div>
+          <div className="hl-note">CDG 29,100 + Andaz 75K</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#1A6B3A' }}>
           <div className="hl-icon">🎢</div>
           <div className="hl-label">Attractions</div>
-          <div className="hl-value">~$230–310</div>
+          <div className="hl-value">~$180–220</div>
           <div className="hl-note">excl. pre-purchased shows</div>
         </div>
       </div>
@@ -70,8 +70,20 @@ export default function CostSummary() {
       <div className="grand-total">
         <div className="gt-inner">
           <div className="gt-row">
-            <span>All flights (4 flights, family of 3)</span>
-            <span className="gt-value green">$0 — Amex MR points</span>
+            <span>Flights — United PIT→CDG (cash)</span>
+            <span>$1,875</span>
+          </div>
+          <div className="gt-row">
+            <span>Flights — Ryanair LTN→DUB (cash)</span>
+            <span>$258</span>
+          </div>
+          <div className="gt-row">
+            <span>Flights — BSL→LHR (cash)</span>
+            <span>TBD</span>
+          </div>
+          <div className="gt-row">
+            <span>Flights — Aer Lingus DUB→PIT (points)</span>
+            <span className="gt-pts">60K Avios (20K/pp)</span>
           </div>
           <div className="gt-row">
             <span>PIT parking (12 days, fixed rate)</span>
@@ -79,27 +91,23 @@ export default function CostSummary() {
           </div>
           <div className="gt-row">
             <span>Disney package (Sequoia Lodge + 4-day tickets)</span>
-            <span>$2,200</span>
+            <span>$2,554.98</span>
           </div>
           <div className="gt-row">
-            <span>Hyatt House Paris CDG (2 nights — points)</span>
-            <span className="gt-pts">~16–30K Chase UR pts</span>
+            <span>Hyatt Place Paris CDG (2 nights — points)</span>
+            <span className="gt-pts">29,100 Hyatt pts (14,550/night)</span>
           </div>
           <div className="gt-row">
             <span>Hotel Krønasår (2 nights + park + Rulantica)</span>
             <span>~$1,396</span>
           </div>
           <div className="gt-row">
-            <span>Hyatt Place Amsterdam Airport (1 night — points)</span>
-            <span className="gt-pts">~8–12K Chase UR pts</span>
-          </div>
-          <div className="gt-row">
             <span>Andaz London Liverpool St (3 nights — points)</span>
-            <span className="gt-pts">~51–63K Chase UR pts</span>
+            <span className="gt-pts">75,000 Hyatt pts (25K/night)</span>
           </div>
           <div className="gt-row">
             <span>Attractions &amp; activities</span>
-            <span>~$230–310</span>
+            <span>~$180–220</span>
           </div>
           <div className="gt-row">
             <span>Ground transport in Europe</span>
@@ -112,11 +120,15 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$5,026–5,366</span>
+            <span>~$7,464–7,774 + BSL→LHR TBD</span>
           </div>
           <div className="gt-row grand pts">
-            <span>CHASE UR POINTS (→ Hyatt 1:1)</span>
-            <span>~75,000–105,000 pts</span>
+            <span>HYATT POINTS (Chase UR → Hyatt 1:1)</span>
+            <span>104,100 pts</span>
+          </div>
+          <div className="gt-row grand pts">
+            <span>AVIOS POINTS (Aer Lingus)</span>
+            <span>60,000 pts</span>
           </div>
         </div>
       </div>
