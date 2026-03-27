@@ -9,6 +9,7 @@ export default function CancellationPolicies() {
       penalty: "None",
       refund: "96K SkyMiles redeposited + $426.90 refunded to card",
       flexibility: "high",
+      status: "not_booked",
       notes: "Delta eliminated redeposit fees for award tickets originating in the US. Cancel via delta.com 'My Trips'. No-show forfeits everything.",
     },
     {
@@ -20,6 +21,7 @@ export default function CancellationPolicies() {
       penalty: "None if 48+ hrs out",
       refund: "Points redeposited immediately",
       flexibility: "high",
+      status: "not_booked",
       notes: "Late cancel/no-show: points refunded but card charged 1-night cash rate. Check confirmation for exact deadline.",
     },
     {
@@ -31,6 +33,7 @@ export default function CancellationPolicies() {
       penalty: "None if 7+ days out — full forfeit inside 7 days",
       refund: "Full refund to original payment method",
       flexibility: "high",
+      status: "not_booked",
       notes: "Applies to direct disneylandparis.com bookings. Third-party bookings follow that vendor's policy. 15% deposit at booking, balance due 60 days before.",
     },
     {
@@ -42,6 +45,7 @@ export default function CancellationPolicies() {
       penalty: "None if 48+ hrs out",
       refund: "Points redeposited immediately",
       flexibility: "high",
+      status: "not_booked",
       notes: "Same Hyatt policy as arrival night. Late cancel/no-show: card charged 1-night cash rate.",
     },
     {
@@ -53,6 +57,7 @@ export default function CancellationPolicies() {
       penalty: "'Seconde' fare: free 7+ days, €19/ticket inside 7 days. 'Prems' fare: non-refundable.",
       refund: "Refund to original payment method via sncf-connect.com",
       flexibility: "check",
+      status: "not_booked",
       notes: "Check each ticket in your sncf-connect.com account — fare name and conditions shown per ticket. Covers CDG↔Chessy, Paris Est↔Ringsheim legs.",
     },
     {
@@ -64,6 +69,7 @@ export default function CancellationPolicies() {
       penalty: "Standard: none if 3+ days. Promo: €50 fee if 29+ days, full forfeit inside 29 days.",
       refund: "Refund to original payment or voucher",
       flexibility: "check",
+      status: "not_booked",
       notes: "Check confirmation for rate type. Package bookings with park tickets may fall under restricted rate terms. Contact reservation.europapark.de to confirm.",
     },
     {
@@ -75,6 +81,7 @@ export default function CancellationPolicies() {
       penalty: "Standard: £25/pp refund fee. Standard Premier: no fee within 48 hrs. SNAP: non-refundable.",
       refund: "Refund to original payment, up to 28 days processing",
       flexibility: "medium",
+      status: "not_booked",
       notes: "Exchanges are free up to 1 hour before departure (pay any fare difference). Check your fare class on eurostar.com under 'Manage my booking'.",
     },
     {
@@ -86,6 +93,7 @@ export default function CancellationPolicies() {
       penalty: "None if 48+ hrs out",
       refund: "75K points redeposited immediately",
       flexibility: "high",
+      status: "not_booked",
       notes: "Late cancel/no-show: card charged 1-night cash rate (Andaz runs £250–400+/night in July). Cancel via Hyatt app or hyatt.com.",
     },
     {
@@ -97,6 +105,7 @@ export default function CancellationPolicies() {
       penalty: "Full loss",
       refund: "None — date exchange possible at theatre's discretion (£2/ticket admin fee)",
       flexibility: "none",
+      status: "not_booked",
       notes: "Contact boxoffice@shaftesburytheatre.com well in advance for possible date exchange. If show is canceled by producer, alternative performance offered.",
     },
     {
@@ -108,6 +117,7 @@ export default function CancellationPolicies() {
       penalty: "Full loss",
       refund: "None — refund only if event canceled by promoter",
       flexibility: "none",
+      status: "not_booked",
       notes: "DO NOT resell on Viagogo or unauthorized platforms — entire original booking will be canceled and entry refused. Use official resale channel only if available.",
     },
     {
@@ -119,6 +129,7 @@ export default function CancellationPolicies() {
       penalty: "Full loss (minus tiny tax refund)",
       refund: "Only government taxes/airport charges refundable (a few £ per ticket)",
       flexibility: "none",
+      status: "not_booked",
       notes: "Flight changes allowed up to 2.5 hrs before departure for €35–55/pp + fare difference. Changing is better than canceling if you can't travel.",
     },
     {
@@ -130,46 +141,54 @@ export default function CancellationPolicies() {
       penalty: "€42.50/pp (~€127.50 total)",
       refund: "60K Avios redeposited. Taxes/fees refunded minus €42.50/pp cancellation charge.",
       flexibility: "medium",
+      status: "not_booked",
       notes: "Inside 24 hours: no cancellation possible. If booked through British Airways, fee structure may differ ($55 online, $80 by phone).",
     },
   ]
 
   const flexColor = { high: '#2E7D32', medium: '#E65100', check: '#1565C0', none: '#B71C1C' }
   const flexLabel = { high: 'HIGH', medium: 'MEDIUM', check: 'CHECK FARE/RATE', none: 'NON-REFUNDABLE' }
+  const statusColor = { booked: '#2E7D32', not_booked: '#B71C1C', canceled: '#757575' }
+  const statusLabel = { booked: 'BOOKED', not_booked: 'NOT BOOKED', canceled: 'CANCELED' }
+  const statusIcon = { booked: '✅', not_booked: '❌', canceled: '🚫' }
+
+  const bookedCount = policies.filter(p => p.status === 'booked').length
+  const notBookedCount = policies.filter(p => p.status === 'not_booked').length
+  const canceledCount = policies.filter(p => p.status === 'canceled').length
 
   return (
     <div className="costs-view">
       <div className="costs-header">
-        <div className="costs-badge">POLICIES</div>
-        <h1 className="costs-title">Cancellation Policies</h1>
-        <p className="costs-sub">Family of Three · Jun 30–Jul 12, 2026 · Key deadlines and refund terms</p>
+        <div className="costs-badge">BOOKINGS</div>
+        <h1 className="costs-title">Bookings</h1>
+        <p className="costs-sub">Family of Three · Jun 30–Jul 12, 2026 · Booking status, deadlines, and cancellation terms</p>
         <p className="costs-note">Always verify policies against your actual booking confirmations</p>
       </div>
 
-      {/* Key deadlines summary */}
+      {/* Status summary */}
       <div className="cost-highlights">
         <div className="highlight-card" style={{ borderColor: '#2E7D32' }}>
           <div className="hl-icon">✅</div>
-          <div className="hl-label">Fully Flexible</div>
-          <div className="hl-value">6</div>
-          <div className="hl-note">Flights (pts) + Hotels (pts)</div>
-        </div>
-        <div className="highlight-card" style={{ borderColor: '#E65100' }}>
-          <div className="hl-icon">⚠️</div>
-          <div className="hl-label">Partial / Medium</div>
-          <div className="hl-value">2</div>
-          <div className="hl-note">Eurostar + Aer Lingus</div>
-        </div>
-        <div className="highlight-card" style={{ borderColor: '#1565C0' }}>
-          <div className="hl-icon">🔍</div>
-          <div className="hl-label">Check Fare/Rate</div>
-          <div className="hl-value">2</div>
-          <div className="hl-note">TGV + Krønasår</div>
+          <div className="hl-label">Booked</div>
+          <div className="hl-value">{bookedCount}</div>
+          <div className="hl-note">of {policies.length} bookings</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#B71C1C' }}>
+          <div className="hl-icon">❌</div>
+          <div className="hl-label">Not Booked</div>
+          <div className="hl-value">{notBookedCount}</div>
+          <div className="hl-note">still need to book</div>
+        </div>
+        <div className="highlight-card" style={{ borderColor: '#757575' }}>
+          <div className="hl-icon">🚫</div>
+          <div className="hl-label">Canceled</div>
+          <div className="hl-value">{canceledCount}</div>
+          <div className="hl-note">no longer needed</div>
+        </div>
+        <div className="highlight-card" style={{ borderColor: '#1565C0' }}>
           <div className="hl-icon">🔒</div>
           <div className="hl-label">Non-Refundable</div>
-          <div className="hl-value">3</div>
+          <div className="hl-value">{policies.filter(p => p.flexibility === 'none').length}</div>
           <div className="hl-note">Avenue Q + EDDFEST + Ryanair</div>
         </div>
       </div>
@@ -212,8 +231,19 @@ export default function CancellationPolicies() {
       {/* Detailed policies */}
       {policies.map((p, i) => (
         <div key={i} className="cost-section">
-          <h2 className="cost-section-title" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <h2 className="cost-section-title" style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
             {p.name}
+            <span style={{
+              fontSize: '0.6em',
+              padding: '2px 8px',
+              borderRadius: '4px',
+              color: '#fff',
+              background: statusColor[p.status],
+              fontWeight: 600,
+              letterSpacing: '0.05em',
+            }}>
+              {statusIcon[p.status]} {statusLabel[p.status]}
+            </span>
             <span style={{
               fontSize: '0.6em',
               padding: '2px 8px',
@@ -258,6 +288,7 @@ export default function CancellationPolicies() {
       <div className="costs-disclaimer">
         Policies researched March 2026. Always verify against your actual booking confirmations — terms may vary by fare class, rate type, or booking channel.
         Hyatt cancellation windows can vary by property. TGV and Eurostar policies depend on fare class purchased.
+        To update booking status, edit the "status" field in CancellationPolicies.jsx (booked, not_booked, or canceled).
       </div>
     </div>
   )

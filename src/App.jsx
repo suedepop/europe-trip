@@ -86,8 +86,8 @@ export default function App() {
               onClick={() => { setShowPolicies(true); setShowCosts(false) }}
             >
               <span className="day-btn-num" style={showPolicies ? {} : { color: '#C9A84C' }}>📋</span>
-              <span className="day-btn-date">Policies</span>
-              <span className="day-btn-title">Cancellation Policies</span>
+              <span className="day-btn-date">Bookings</span>
+              <span className="day-btn-title">Bookings & Policies</span>
             </button>
           </div>
         </nav>
