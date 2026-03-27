@@ -6,7 +6,7 @@ export default function CostSummary() {
       <div className="costs-header">
         <div className="costs-badge">SUMMARY</div>
         <h1 className="costs-title">Complete Trip Costs</h1>
-        <p className="costs-sub">Family of Three · Jul 1–12, 2026 · Estimates in USD unless noted</p>
+        <p className="costs-sub">Family of Three · Jun 30–Jul 12, 2026 · Estimates in USD unless noted</p>
         <p className="costs-note">Exchange rates approx: €1 ≈ $1.10 USD · £1 ≈ $1.27 USD</p>
       </div>
 
@@ -24,8 +24,8 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#C9A84C' }}>
           <div className="hl-icon">✈</div>
           <div className="hl-label">Flights (cash)</div>
-          <div className="hl-value">$2,133</div>
-          <div className="hl-note">+ 60K Avios pts</div>
+          <div className="hl-value">$685</div>
+          <div className="hl-note">+ 96K pts + 60K Avios</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
@@ -36,8 +36,8 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
           <div className="hl-icon">💎</div>
           <div className="hl-label">Hyatt Points</div>
-          <div className="hl-value">104,100</div>
-          <div className="hl-note">CDG 29,100 + Andaz 75K</div>
+          <div className="hl-value">118,650</div>
+          <div className="hl-note">CDG 43,650 + Andaz 75K</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#1A6B3A' }}>
           <div className="hl-icon">🎢</div>
@@ -70,8 +70,12 @@ export default function CostSummary() {
       <div className="grand-total">
         <div className="gt-inner">
           <div className="gt-row">
-            <span>Flights (cash) — United + Ryanair</span>
-            <span>$2,133</span>
+            <span>Flights (cash) — Delta/AF fees + Ryanair</span>
+            <span>$684.90</span>
+          </div>
+          <div className="gt-row">
+            <span>Flights (points) — Delta/AF PIT→CDG</span>
+            <span className="gt-pts">96K pts</span>
           </div>
           <div className="gt-row">
             <span>Flights (points) — Aer Lingus DUB→PIT</span>
@@ -90,8 +94,8 @@ export default function CostSummary() {
             <span>$2,554.98</span>
           </div>
           <div className="gt-row">
-            <span>Hyatt Place Paris CDG (2 nights — points)</span>
-            <span className="gt-pts">29,100 Hyatt pts (14,550/night)</span>
+            <span>Hyatt Place Paris CDG (3 nights — points)</span>
+            <span className="gt-pts">43,650 Hyatt pts (14,550/night)</span>
           </div>
           <div className="gt-row">
             <span>Hotel Krønasår (2 nights + park + Rulantica)</span>
@@ -108,11 +112,15 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$7,334–7,534</span>
+            <span>~$6,146–6,346</span>
+          </div>
+          <div className="gt-row grand pts">
+            <span>FLIGHT POINTS (Delta/AF PIT→CDG)</span>
+            <span>96,000 pts</span>
           </div>
           <div className="gt-row grand pts">
             <span>HYATT POINTS (Chase UR → Hyatt 1:1)</span>
-            <span>104,100 pts</span>
+            <span>118,650 pts</span>
           </div>
           <div className="gt-row grand pts">
             <span>AVIOS POINTS (Aer Lingus)</span>

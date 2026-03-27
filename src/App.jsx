@@ -11,12 +11,12 @@ export default function App() {
   const day = DAYS.find(d => d.num === activeDay)
 
   const segmentGroups = [
-    { key: 'transit', days: [0] },
-    { key: 'disney', days: [1, 2, 3] },
-    { key: 'paris', days: [4, 5] },
-    { key: 'europa', days: [6, 7] },
-    { key: 'london', days: [8, 9, 10] },
-    { key: 'transit', days: [11] },
+    { key: 'transit', days: [0, 1] },
+    { key: 'disney', days: [2, 3, 4] },
+    { key: 'paris', days: [5, 6] },
+    { key: 'europa', days: [7, 8] },
+    { key: 'london', days: [9, 10, 11] },
+    { key: 'transit', days: [12] },
   ]
 
   return (
@@ -27,7 +27,7 @@ export default function App() {
           <div className="sidebar-logo">✈</div>
           <div className="sidebar-title-block">
             <div className="sidebar-title">EUROPE 2026</div>
-            <div className="sidebar-sub">Jul 1–12 · Family of Three</div>
+            <div className="sidebar-sub">Jun 30–Jul 12 · Family of Three</div>
           </div>
           <button className="sidebar-toggle" onClick={() => setSidebarOpen(o => !o)}>
             {sidebarOpen ? '◀' : '▶'}
