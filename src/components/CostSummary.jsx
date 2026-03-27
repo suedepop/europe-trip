@@ -122,7 +122,7 @@ export default function CostSummary() {
       </div>
 
       <div className="costs-disclaimer">
-        Dining costs not shown — budget separately. Avenue Q and EddFest tickets excluded (pre-purchased).
+        Dining costs not shown — budget separately. Avenue Q and EDDFEST tickets excluded (pre-purchased).
         All Hyatt stays must be booked before May 2026 to lock in current award rates.
         Europa-Park tickets and Rulantica fully included in Krønasår package.
       </div>
