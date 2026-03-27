@@ -296,6 +296,7 @@ export const DAYS = [
       { time: "3:15 PM", title: "Arrive London St Pancras", detail: "UK border control at St Pancras. Walk to King's Cross (~2 min), Northern Line to Moorgate, walk to Andaz (~5 min). Or taxi ~£15.", cost: "~£10 tube or ~£15 taxi" },
       { time: "4:00 PM", title: "Andaz London Liverpool Street — check in", detail: "25K Hyatt pts/night. Victorian 1884 railway hotel. Free non-alcoholic minibar daily. Ask for a quiet room.", cost: "25K pts/night" },
       { time: "7:00 PM", title: "Dinner — Honest Burgers or Hawksmoor, Shoreditch", detail: "Honest Burgers Shoreditch: excellent British burgers, rosemary fries. Hawksmoor Spitalfields: world-class steak — book ahead. Both a short walk from the hotel.", cost: "" },
+      { time: "9:00 PM", title: "Optional — Hurricane Room, King's Cross (snooker/English 8-ball)", detail: "10 snooker tables + 6 English pool tables. Proper cue sport venue, open until 2am. Northern Line from Moorgate to King's Cross (~15 min) or taxi ~£12. Pizza and bar on-site. hurricaneroom.co.uk", cost: "~£10–15/hr table" },
     ],
     note: "Book Eurostar and TGV early for best fares — eurostar.com and sncf-connect.com. No taxis, no flights, no airports, no luggage restrictions. Ringsheim station is the same one you arrived at on Day 6.",
   },
