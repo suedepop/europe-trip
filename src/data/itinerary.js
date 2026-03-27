@@ -419,7 +419,7 @@ export const DAYS = [
       { time: "9:00 AM", title: "Arrive Luton Airport — check in for Ryanair", detail: "Check in online before arrival. Bag drop and security.", cost: "" },
       { time: "11:00 AM", title: "✈ Ryanair departs LTN → Dublin", detail: "~1h 15min. Same timezone (BST/IST both UTC+1). $86/pp.", cost: "$258 (3 × $86)" },
       { time: "12:15 PM", title: "Arrive Dublin Airport", detail: "Taxi to city centre (~25 min, ~€25–30) or Aircoach bus (~€8/pp, ~40 min).", cost: "~€25–30 taxi" },
-      { time: "1:30 PM", title: "The College Green Hotel — check in", detail: "College Green, right next to Trinity College. Steps from Temple Bar and Grafton Street.", cost: "$686.52 − $300 Amex = $205.73 net" },
+      { time: "1:30 PM", title: "The College Green Hotel — check in", detail: "College Green, right next to Trinity College. Steps from Temple Bar and Grafton Street.", cost: "$686.52 − $300 Amex = $386.52 net" },
       { time: "2:30 PM", title: "Grafton Street + St. Stephen's Green", detail: "Dublin's famous pedestrian shopping street. Buskers, street performers. St. Stephen's Green park at the top.", cost: "Free" },
       { time: "4:00 PM", title: "Temple Bar district walk", detail: "Cobblestone streets, colourful pubs, street performers. Ha'penny Bridge over the River Liffey — classic Dublin photo. ~15 min walk from hotel.", cost: "Free" },
       { time: "6:30 PM", title: "Dinner — Bunsen or FX Buckley", detail: "Bunsen: Dublin's best burgers, simple menu. FX Buckley: excellent Irish steaks. Both walkable from the hotel.", cost: "" },
@@ -493,7 +493,7 @@ export const COST_SUMMARY = [
     { label: "Hyatt Place Paris CDG Airport — 3 nights (14,550/night)", cost: "43,650 Hyatt pts" },
     { label: "Hotel Krønasår — 2 nights + 2-day park + Rulantica", cost: "€1,269 (~$1,396)" },
     { label: "Andaz London Liverpool Street — 3 nights (25K/night)", cost: "75K Hyatt pts" },
-    { label: "The College Green Hotel — 1 night ($686.52 − $300 Amex credit)", cost: "$205.73 net" },
+    { label: "The College Green Hotel — 1 night ($686.52 − $300 Amex credit)", cost: "$386.52 net" },
   ], total: "~$4,337.50 cash + 118,650 Hyatt pts" },
   { category: "ATTRACTIONS", items: [
     { label: "Louvre Museum (2 adults ~€22, teen FREE)", cost: "~€44" },
