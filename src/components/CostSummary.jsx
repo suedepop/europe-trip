@@ -78,7 +78,7 @@ export default function CostSummary() {
             <span>$258</span>
           </div>
           <div className="gt-row">
-            <span>Trains — Strasbourg→Paris TGV + Paris→London Eurostar</span>
+            <span>Trains — Ringsheim→Paris TGV + Paris→London Eurostar</span>
             <span>~$420–510</span>
           </div>
           <div className="gt-row">
