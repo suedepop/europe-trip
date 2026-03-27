@@ -422,7 +422,6 @@ export const COST_SUMMARY = [
     { label: "RER B: CDG ↔ Central Paris (Jul 5–7, multiple trips)", cost: "~€130 family" },
     { label: "TGV: Chessy → CDG (Jul 5)", cost: "~€20 family" },
     { label: "TGV: Paris Gare de l'Est → Ringsheim (Jul 7)", cost: "~€150–210 family" },
-    { label: "Taxi: Krønasår → BSL (Jul 8, if needed)", cost: "~€70" },
     { label: "Elizabeth Line / Tube: London various (Jul 9–12)", cost: "~£100 family" },
     { label: "Thameslink: London → Knebworth return (Jul 11)", cost: "~£30/pp" },
     { label: "Thameslink: Farringdon → Luton Airport Parkway (Jul 12)", cost: "~£48 family" },
