@@ -25,7 +25,7 @@ export default function CostSummary() {
           <div className="hl-icon">✈</div>
           <div className="hl-label">Flights (cash)</div>
           <div className="hl-value">$685</div>
-          <div className="hl-note">+ 96K pts + 60K Avios</div>
+          <div className="hl-note">+ 96K Flying Blue + 60K Avios</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
@@ -74,8 +74,8 @@ export default function CostSummary() {
             <span>$684.90</span>
           </div>
           <div className="gt-row">
-            <span>Flights (points) — Delta/AF PIT→CDG</span>
-            <span className="gt-pts">96K pts</span>
+            <span>Flights (points) — Air France Flying Blue PIT→CDG</span>
+            <span className="gt-pts">96K Flying Blue (Amex transfer)</span>
           </div>
           <div className="gt-row">
             <span>Flights (points) — Aer Lingus DUB→PIT</span>
@@ -115,7 +115,7 @@ export default function CostSummary() {
             <span>~$6,146–6,346</span>
           </div>
           <div className="gt-row grand pts">
-            <span>FLIGHT POINTS (Delta/AF PIT→CDG)</span>
+            <span>FLYING BLUE (Amex MR → Air France)</span>
             <span>96,000 pts</span>
           </div>
           <div className="gt-row grand pts">

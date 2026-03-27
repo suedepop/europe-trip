@@ -15,7 +15,7 @@ export const DAYS = [
     accent: "#8DA0B8",
     segment: "transit",
     hotel: "In Transit",
-    hotelDetail: "Overnight flight — 96K pts + $426.90",
+    hotelDetail: "Overnight flight — 96K Flying Blue pts (Amex transfer) + $426.90",
     center: [47.5, -25.0],
     zoom: 3,
     stops: [
@@ -24,7 +24,7 @@ export const DAYS = [
     ],
     entries: [
       { time: "Afternoon", title: "Drive to Pittsburgh International Airport", detail: "Fixed-rate long-term parking pre-arranged.", cost: "" },
-      { time: "Evening", title: "DL1353 departs PIT", detail: "First leg to connecting hub.", cost: "96K pts + $426.90" },
+      { time: "Evening", title: "DL1353 departs PIT", detail: "First leg to connecting hub.", cost: "96K Flying Blue pts (Amex transfer) + $426.90" },
       { time: "Late", title: "Board AF0033 → CDG", detail: "Overnight transatlantic. Arrives CDG morning Jul 1. Set watches to Paris time (+6 hrs). Sleep immediately.", cost: "Included above" },
     ],
     note: "Delta/Air France flights PIT → CDG — 96,000 points + $426.90 in fees.",
@@ -437,7 +437,7 @@ export const SEGMENTS = {
 
 export const COST_SUMMARY = [
   { category: "FLIGHTS", items: [
-    { label: "PIT → CDG (Jun 30) — Delta DL1353 / Air France AF0033", cost: "96K pts + $426.90" },
+    { label: "PIT → CDG (Jun 30) — Delta DL1353 / Air France AF0033", cost: "96K Flying Blue pts (Amex transfer) + $426.90" },
     { label: "LTN → DUB (Jul 12) — Ryanair", cost: "$258 ($86/pp × 3)" },
     { label: "DUB → PIT (Jul 12) — Aer Lingus direct", cost: "60K Avios pts (20K/pp × 3)" },
   ], total: "$684.90 cash + 96K pts + 60K Avios" },
