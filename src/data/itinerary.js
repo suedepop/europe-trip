@@ -60,7 +60,7 @@ export const DAYS = [
     label: "Day 2",
     date: "Thu Jul 2",
     title: "Hyatt Place CDG → Disneyland Paris",
-    subtitle: "Check into Sequoia Lodge — optional afternoon park visit",
+    subtitle: "OUIGO 7897 to Chessy · Check into Sequoia Lodge · optional afternoon park",
     color: "#6B3FA0",
     accent: "#9B6FD0",
     segment: "disney",
@@ -69,8 +69,8 @@ export const DAYS = [
     center: [48.868, 2.720],
     zoom: 12,
     stops: [
-      { lat: 49.0035, lon: 2.5140, name: "Hyatt Place CDG — Checkout", time: "10:00 AM", detail: "Breakfast · checkout · TGV to Chessy", icon: "🏨" },
-      { lat: 48.8633, lon: 2.7793, name: "Marne-la-Vallée Chessy TGV", time: "11:00 AM", detail: "TGV from CDG · book ticket as 'Chessy' ~€25/pp", icon: "🚄" },
+      { lat: 49.0035, lon: 2.5140, name: "Hyatt Place CDG — Checkout", time: "10:00 AM", detail: "Breakfast · checkout · walk to Aéroport CDG 2 TGV station", icon: "🏨" },
+      { lat: 48.8633, lon: 2.7793, name: "Marne-la-Vallée Chessy", time: "11:11 AM", detail: "OUIGO 7897 · 2nd Class · 11 min from CDG", icon: "🚄" },
       { lat: 48.8692, lon: 2.7822, name: "Sequoia Lodge", time: "11:15 AM", detail: "Check in · 3 nights + 4-day park hopper · $2,554.98 package", icon: "🏨" },
       { lat: 48.8680, lon: 2.7808, name: "Disney Village", time: "12:00 PM", detail: "OPTION A: lunch here then head to a park · OPTION B: relax, save energy", icon: "🎠" },
       { lat: 48.8700, lon: 2.7795, name: "Disneyland Park (Option A)", time: "2:00 PM", detail: "Pirates, Phantom Manor, Big Thunder Mountain — tickets already active", icon: "🏰" },
@@ -78,7 +78,7 @@ export const DAYS = [
     entries: [
       { time: "9:00 AM", title: "Breakfast at Hyatt Place", detail: "Included with stay. No rush — relaxed morning.", cost: "Free (included)" },
       { time: "10:00 AM", title: "Checkout Hyatt Place CDG", detail: "1-night stay complete.", cost: "" },
-      { time: "10:15 AM", title: "TGV CDG → Marne-la-Vallée Chessy", detail: "Direct TGV ~10 min. Buy tickets as 'Chessy' (~€25/pp).", cost: "~€75 family" },
+      { time: "11:00 AM", title: "OUIGO 7897 — Aéroport CDG 2 TGV → Marne-la-Vallée Chessy", detail: "2nd Class. Departs 11:00, arrives 11:11. Walk to CDG 2 TGV station from hotel.", cost: "€57" },
       { time: "11:15 AM", title: "Sequoia Lodge check-in", detail: "Bell desk holds bags if room isn't ready. Confirm 4-day park tickets included in package.", cost: "$2,554.98 package" },
       { time: "12:00 PM", title: "⚡ CHOICE: Disney Village or Head to a Park", detail: "Option A: your tickets are active — Pirates, Phantom Manor, Big Thunder. Option B: Explore Disney Village, hotel grounds, and rest for the full park days ahead.", cost: "" },
       { time: "9:00 PM", title: "Early bedtime", detail: "Tomorrow is a full Disneyland Park day with 8:30am hotel early entry.", cost: "" },
@@ -482,7 +482,7 @@ export const COST_SUMMARY = [
     { label: "DUB → PIT (Jul 13) — Aer Lingus direct", cost: "60K Avios pts (20K/pp × 3)" },
   ], total: "$684.90 cash + 96K pts + 60K Avios" },
   { category: "TRAINS", items: [
-    { label: "CDGVal + TGV: CDG → Chessy (Jul 2)", cost: "~€75 family" },
+    { label: "OUIGO 7897: Aéroport CDG 2 TGV → Chessy — 2nd Class (Jul 2)", cost: "€57" },
     { label: "TGV: Chessy → CDG (Jul 5)", cost: "~€20 family" },
     { label: "OUIGO 7691 + SCF 87429 + RE 17017: Paris → Strasbourg → Offenburg → Ringsheim — 1st Class (Jul 7)", cost: "$247.67" },
     { label: "TGV INOUI 9530: Ringsheim → Paris Gare de l'Est — 1st Class (Jul 9)", cost: "€234" },
