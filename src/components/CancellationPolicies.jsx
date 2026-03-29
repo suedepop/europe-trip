@@ -1,16 +1,16 @@
 export default function CancellationPolicies() {
   const policies = [
     {
-      name: "Delta / Air France — PIT → CDG",
+      name: "Delta / Air France — PIT → ATL → CDG",
       date: "Jun 30",
       type: "flight",
-      paid: "96K Flying Blue pts (Amex transfer) + $426.90 fees",
+      paid: "96K Flying Blue pts (Amex transfer) + $788.67 fees",
       deadline: "Before departure",
       penalty: "None",
-      refund: "96K Flying Blue miles redeposited + $426.90 refunded to card",
+      refund: "96K Flying Blue miles redeposited + $788.67 refunded to card",
       flexibility: "high",
-      status: "not_booked",
-      notes: "Booked with Air France Flying Blue miles (transferred from Amex MR). Cancel via airfrance.com or flyingblue.com. Flying Blue award tickets are cancellable with miles redeposited. No-show forfeits everything.",
+      status: "booked",
+      notes: "DL1353 PIT→ATL (4:55 PM) + AF0033 ATL→CDG (8:05 PM). Economy Comfort. Seats 22D / 21J. Booked with Air France Flying Blue miles (transferred from Amex MR). Cancel via airfrance.com or flyingblue.com. Flying Blue award tickets are cancellable with miles redeposited. No-show forfeits everything.",
     },
     {
       name: "Hyatt Place Paris CDG — Arrival Night",
@@ -62,10 +62,10 @@ export default function CancellationPolicies() {
     },
     {
       name: "Hotel Krønasår — Europa-Park Package",
-      date: "Jul 7–8",
+      date: "Jul 6–8",
       type: "hotel",
-      paid: "€1,269 cash",
-      deadline: "3 days before (Jul 4) — or 29 days if promo rate (Jun 8)",
+      paid: "$1,497 cash (2 nights + 2-day park)",
+      deadline: "3 days before (Jul 3) — or 29 days if promo rate (Jun 7)",
       penalty: "Standard: none if 3+ days. Promo: €50 fee if 29+ days, full forfeit inside 29 days.",
       refund: "Refund to original payment or voucher",
       flexibility: "check",
@@ -148,13 +148,13 @@ export default function CancellationPolicies() {
       name: "Aer Lingus — DUB → PIT (Avios)",
       date: "Jul 13",
       type: "flight",
-      paid: "60K Avios (20K/pp)",
+      paid: "60K Avios (Amex transfer) + $513.39 fees",
       deadline: "24 hours before departure",
       penalty: "€42.50/pp (~€127.50 total)",
       refund: "60K Avios redeposited. Taxes/fees refunded minus €42.50/pp cancellation charge.",
       flexibility: "medium",
-      status: "not_booked",
-      notes: "Inside 24 hours: no cancellation possible. If booked through British Airways, fee structure may differ ($55 online, $80 by phone).",
+      status: "booked",
+      notes: "EI81 DUB→PIT 3:40 PM direct. Economy. Booking ref EI0532MLHIDLJ · check-in ref 3A5D8S. 1 checked bag each (23 kg). Inside 24 hours: no cancellation possible.",
     },
   ]
 
@@ -210,7 +210,7 @@ export default function CancellationPolicies() {
         <h2 className="cost-section-title">KEY DEADLINES (CHRONOLOGICAL)</h2>
         <div className="cost-table">
           <div className="cost-row even">
-            <span className="cost-row-label">Jun 8 — Krønasår (if promo rate)</span>
+            <span className="cost-row-label">Jun 7 — Krønasår (if promo rate)</span>
             <span className="cost-row-value">29-day cancel window</span>
           </div>
           <div className="cost-row odd">
@@ -230,7 +230,7 @@ export default function CancellationPolicies() {
             <span className="cost-row-value">48-hour cancel window</span>
           </div>
           <div className="cost-row odd">
-            <span className="cost-row-label">Jul 4 — Krønasår (if standard rate)</span>
+            <span className="cost-row-label">Jul 3 — Krønasår (if standard rate)</span>
             <span className="cost-row-value">3-day cancel window</span>
           </div>
           <div className="cost-row even">
