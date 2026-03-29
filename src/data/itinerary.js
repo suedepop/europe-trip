@@ -481,9 +481,9 @@ export const SEGMENTS = {
 
 export const COST_SUMMARY = [
   { category: "FLIGHTS", items: [
-    { label: "PIT → CDG (Jun 30) — Delta DL1353 / Air France AF0033 · Economy Comfort", cost: "96K Flying Blue pts (Amex transfer) + $788.67" },
+    { label: "✅ PIT → CDG (Jun 30) — Delta DL1353 / Air France AF0033 · Economy Comfort", cost: "96K Flying Blue pts (Amex transfer) + $788.67" },
     { label: "LTN → DUB (Jul 12) — Ryanair", cost: "$258 ($86/pp × 3)" },
-    { label: "DUB → PIT (Jul 13) — Aer Lingus EI81 direct", cost: "60K Avios (Amex transfer) + $513.39" },
+    { label: "✅ DUB → PIT (Jul 13) — Aer Lingus EI81 direct", cost: "60K Avios (Amex transfer) + $513.39" },
   ], total: "$1,560.06 cash + 96K Flying Blue pts + 60K Avios (both Amex transfers)" },
   { category: "TRAINS", items: [
     { label: "OUIGO 7897: Aéroport CDG 2 TGV → Chessy — 2nd Class (Jul 2)", cost: "€57" },
