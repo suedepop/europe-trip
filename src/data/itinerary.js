@@ -15,21 +15,21 @@ export const DAYS = [
     accent: "#8DA0B8",
     segment: "transit",
     hotel: "In Transit",
-    hotelDetail: "Overnight flight — 96K Flying Blue pts (Amex transfer) + $426.90",
+    hotelDetail: "Overnight flight — 96K Flying Blue pts (Amex transfer) + $788.67",
     center: [47.5, -25.0],
     zoom: 3,
     stops: [
-      { lat: 40.4957, lon: -80.2329, name: "Pittsburgh Intl (PIT)", time: "4:55 PM", detail: "DL1353 · Main Cabin · Seat 22D → Atlanta", icon: "✈" },
+      { lat: 40.4957, lon: -80.2329, name: "Pittsburgh Intl (PIT)", time: "4:55 PM", detail: "DL1353 · Economy Comfort · Seat 22D → Atlanta", icon: "✈" },
       { lat: 33.6407, lon: -84.4277, name: "Atlanta (ATL)", time: "6:48 PM", detail: "Arrive Hartsfield-Jackson · connect to AF0033 · departs 8:05 PM", icon: "✈" },
       { lat: 49.0097, lon: 2.5478, name: "Paris CDG (arrive Jul 1)", time: "10:35 AM+1", detail: "Terminal 2E · shuttle/taxi to Hyatt Place CDG", icon: "✈" },
     ],
     entries: [
       { time: "Afternoon", title: "Drive to Pittsburgh International Airport", detail: "Fixed-rate long-term parking pre-arranged.", cost: "" },
-      { time: "4:55 PM", title: "DL1353 — PIT → ATL", detail: "Delta Main Cabin. Seat 22D. 1h 53min to Atlanta Hartsfield-Jackson.", cost: "96K Flying Blue pts (Amex transfer) + $426.90" },
+      { time: "4:55 PM", title: "DL1353 — PIT → ATL", detail: "Delta Economy Comfort. Seat 22D. 1h 53min to Atlanta Hartsfield-Jackson.", cost: "96K Flying Blue pts (Amex transfer) + $788.67" },
       { time: "6:48 PM", title: "Arrive Atlanta (ATL)", detail: "Connect from Terminal S to Terminal I. AF0033 departs 8:05 PM.", cost: "" },
-      { time: "8:05 PM", title: "AF0033 — ATL → CDG", detail: "Air France Economy. Seat 21J. Overnight transatlantic ~8.5 hrs. Arrives CDG Terminal 2E at 10:35 AM Jul 1. Set watches to Paris time (+6 hrs). Sleep immediately.", cost: "Included above" },
+      { time: "8:05 PM", title: "AF0033 — ATL → CDG", detail: "Air France Economy Comfort. Seat 21J. Overnight transatlantic ~8.5 hrs. Arrives CDG Terminal 2E at 10:35 AM Jul 1. Set watches to Paris time (+6 hrs). Sleep immediately.", cost: "Included above" },
     ],
-    note: "Delta/Air France flights PIT → ATL → CDG — 96,000 Flying Blue points + $426.90 in fees. 1h 17min connection at Atlanta.",
+    note: "Delta/Air France flights PIT → ATL → CDG — 96,000 Flying Blue points (Amex transfer) + $788.67. Economy Comfort. 1h 17min connection at Atlanta.",
   },
   {
     num: 1,
@@ -199,7 +199,7 @@ export const DAYS = [
     accent: "#4A6FA5",
     segment: "paris",
     hotel: "Hotel Krønasår",
-    hotelDetail: "3 nights + 2-day park · $1,497",
+    hotelDetail: "2 nights + 2-day park · $1,497",
     center: [48.860, 2.340],
     zoom: 13,
     stops: [
@@ -211,7 +211,7 @@ export const DAYS = [
       { lat: 48.8530, lon: 2.3499, name: "Notre-Dame Cathedral exterior", time: "1:45 PM", detail: "Post-fire restoration · exterior accessible and dramatic", icon: "⛪" },
       { lat: 48.8769, lon: 2.3590, name: "Pick up Luggage — Gare de l'Est", time: "5:00 PM", detail: "Retrieve luggage · €13.50", icon: "🧳" },
       { lat: 48.2580, lon: 7.7780, name: "Ringsheim/Europa-Park", time: "7:59 PM", detail: "TGV INOUI arrival · shuttle/walk to Hotel Krønasår", icon: "🚄" },
-      { lat: 48.2674, lon: 7.7222, name: "Hotel Krønasår, Europa-Park", time: "8:30 PM", detail: "3 nights + 2-day park · $1,497 · confirm wristbands", icon: "🏨" },
+      { lat: 48.2674, lon: 7.7222, name: "Hotel Krønasår, Europa-Park", time: "8:30 PM", detail: "2 nights + 2-day park · $1,497 · confirm wristbands", icon: "🏨" },
     ],
     entries: [
       { time: "7:30 AM", title: "Free breakfast at Hyatt House", detail: "Included with stay. Eat well — big sightseeing day ahead.", cost: "Free (included)" },
@@ -225,9 +225,9 @@ export const DAYS = [
       { time: "5:00 PM", title: "Pick up luggage — Luggage Storage Gare de l'Est / 10th Arr.", detail: "Retrieve bags and head to the platform.", cost: "€13.50" },
       { time: "5:25 PM", title: "TGV INOUI — Paris → Ringsheim/Europa-Park", detail: "Direct TGV INOUI. Arrive 7:59 PM.", cost: "$285.50" },
       { time: "7:59 PM", title: "Arrive Ringsheim/Europa-Park station", detail: "Shuttle or walk to Hotel Krønasår.", cost: "" },
-      { time: "8:30 PM", title: "Hotel Krønasår check-in", detail: "Nordic/Viking-themed hotel. 3 nights + 2-day park — $1,497. Confirm wristbands and park access.", cost: "$1,497" },
+      { time: "8:30 PM", title: "Hotel Krønasår check-in", detail: "Nordic/Viking-themed hotel. 2 nights + 2-day park — $1,497. Confirm wristbands and park access.", cost: "$1,497" },
     ],
-    note: "Full day of Paris sightseeing before evening train to Europa-Park. Luggage storage at Gare de l'Est frees you up to explore. Arrive late — settle in for 3 nights at Krønasår.",
+    note: "Full day of Paris sightseeing before evening train to Europa-Park. Luggage storage at Gare de l'Est frees you up to explore. Arrive late — settle in for 2 nights at Krønasår.",
   },
   {
     num: 7,
@@ -239,7 +239,7 @@ export const DAYS = [
     accent: "#3A9B5A",
     segment: "europa",
     hotel: "Hotel Krønasår",
-    hotelDetail: "Night 2 of 3 · Park Day 1 of 2",
+    hotelDetail: "Night 2 of 2 · Park Day 1 of 2",
     center: [48.2674, 7.7222],
     zoom: 16,
     stops: [
@@ -278,7 +278,7 @@ export const DAYS = [
     accent: "#3A9B5A",
     segment: "europa",
     hotel: "Hotel Krønasår",
-    hotelDetail: "Night 3 of 3 · Park Day 2 of 2",
+    hotelDetail: "Checkout day · Park Day 2 of 2",
     center: [48.2674, 7.7222],
     zoom: 16,
     stops: [
@@ -324,7 +324,7 @@ export const DAYS = [
       { lat: 51.5176, lon: -0.0810, name: "Andaz London Liverpool Street", time: "2:30 PM", detail: "Cat 5 · 25K Hyatt pts/night · 3 nights · Victorian 1884 railway hotel", icon: "🏨" },
     ],
     entries: [
-      { time: "5:45 AM", title: "Early checkout Hotel Krønasår", detail: "3-night stay complete. Grab a quick bite if available or eat on the train — 1st Class includes service. Shuttle or walk to Ringsheim station.", cost: "" },
+      { time: "5:45 AM", title: "Early checkout Hotel Krønasår", detail: "2-night stay complete. Grab a quick bite if available or eat on the train — 1st Class includes service. Shuttle or walk to Ringsheim station.", cost: "" },
       { time: "6:57 AM", title: "TGV INOUI 9530 — 1st Class — Ringsheim → Paris Gare de l'Est", detail: "Direct. Same station you arrived at on Day 7. 1st Class includes more space and service.", cost: "€234" },
       { time: "9:37 AM", title: "Arrive Paris Gare de l'Est", detail: "5-min walk to Gare du Nord for Eurostar. ~2.5 hrs before Eurostar departure — time for breakfast/lunch.", cost: "" },
       { time: "10:00 AM", title: "Breakfast/lunch at Gare du Nord", detail: "Plenty of time before Eurostar boarding. Multiple cafés and restaurants in the station.", cost: "" },
@@ -446,7 +446,7 @@ export const DAYS = [
     accent: "#8DA0B8",
     segment: "transit",
     hotel: "In Transit",
-    hotelDetail: "Aer Lingus EI81 DUB → PIT · 60K Avios + $513.39",
+    hotelDetail: "Aer Lingus EI81 DUB → PIT · 60K Avios (Amex transfer) + $513.39",
     center: [43.0, -30.0],
     zoom: 3,
     stops: [
@@ -463,7 +463,7 @@ export const DAYS = [
       { time: "12:30 PM", title: "Arrive Dublin Airport Terminal 2", detail: "Aer Lingus operates from T2. Check in, bag drop.", cost: "" },
       { time: "1:00 PM", title: "US Preclearance at Dublin Airport", detail: "Dublin has US Customs & Border Protection on-site — you clear US immigration BEFORE boarding. Allow 60–90 min. Arrive PIT as a domestic passenger.", cost: "" },
       { time: "2:30 PM", title: "Airside — lunch + duty free", detail: "Terminal 2 food options. Pick up Irish souvenirs, Cadbury, Tayto crisps, or Irish whiskey in duty free.", cost: "" },
-      { time: "3:40 PM", title: "✈ Aer Lingus EI81 departs DUB → PIT (direct)", detail: "Direct flight ~8 hrs. Economy. Booking ref EI0532MLHIDLJ · check-in ref 3A5D8S. 1 checked bag each (23 kg).", cost: "60K Avios + $513.39" },
+      { time: "3:40 PM", title: "✈ Aer Lingus EI81 departs DUB → PIT (direct)", detail: "Direct flight ~8 hrs. Economy. Booking ref EI0532MLHIDLJ · check-in ref 3A5D8S. 1 checked bag each (23 kg).", cost: "60K Avios (Amex transfer) + $513.39" },
       { time: "6:40 PM", title: "Arrive Pittsburgh International (PIT)", detail: "Arrive 6:40 PM EDT as domestic passenger (pre-cleared in Dublin). Collect bags, retrieve car from parking.", cost: "" },
     ],
     note: "Dublin's US Preclearance is a huge perk — no immigration queues at PIT. You walk off the plane and go straight to baggage claim. PRE-BOOK Book of Kells at tcd.ie — it sells out in July.",
@@ -481,10 +481,10 @@ export const SEGMENTS = {
 
 export const COST_SUMMARY = [
   { category: "FLIGHTS", items: [
-    { label: "PIT → CDG (Jun 30) — Delta DL1353 / Air France AF0033", cost: "96K Flying Blue pts (Amex transfer) + $426.90" },
+    { label: "PIT → CDG (Jun 30) — Delta DL1353 / Air France AF0033 · Economy Comfort", cost: "96K Flying Blue pts (Amex transfer) + $788.67" },
     { label: "LTN → DUB (Jul 12) — Ryanair", cost: "$258 ($86/pp × 3)" },
-    { label: "DUB → PIT (Jul 13) — Aer Lingus EI81 direct", cost: "60K Avios + $513.39" },
-  ], total: "$1,198.29 cash + 96K Flying Blue pts + 60K Avios" },
+    { label: "DUB → PIT (Jul 13) — Aer Lingus EI81 direct", cost: "60K Avios (Amex transfer) + $513.39" },
+  ], total: "$1,560.06 cash + 96K Flying Blue pts + 60K Avios (both Amex transfers)" },
   { category: "TRAINS", items: [
     { label: "OUIGO 7897: Aéroport CDG 2 TGV → Chessy — 2nd Class (Jul 2)", cost: "€57" },
     { label: "TGV: Chessy → CDG (Jul 5)", cost: "~€20 family" },
@@ -502,7 +502,7 @@ export const COST_SUMMARY = [
   { category: "ACCOMMODATION", items: [
     { label: "Sequoia Lodge DLP — 3 nights + 4-day park hopper package", cost: "$2,554.98" },
     { label: "Hyatt Place Paris CDG Airport — 2 nights (14,550/night)", cost: "29,100 Hyatt pts" },
-    { label: "Hotel Krønasår — 3 nights + 2-day park", cost: "$1,497" },
+    { label: "Hotel Krønasår — 2 nights + 2-day park", cost: "$1,497" },
     { label: "Andaz London Liverpool Street — 3 nights (25K/night)", cost: "75K Hyatt pts" },
     { label: "The College Green Hotel — 1 night ($686.52 − $300 Amex credit)", cost: "$386.52 net" },
   ], total: "~$4,438.50 cash + 104,100 Hyatt pts" },
