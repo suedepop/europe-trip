@@ -24,20 +24,20 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#C9A84C' }}>
           <div className="hl-icon">✈</div>
           <div className="hl-label">Flights (cash)</div>
-          <div className="hl-value">$685</div>
-          <div className="hl-note">+ 96K Flying Blue + 60K Avios</div>
+          <div className="hl-value">$1,560</div>
+          <div className="hl-note">+ 96K Flying Blue + 60K Avios (Amex transfers)</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
           <div className="hl-label">Hotels (cash)</div>
-          <div className="hl-value">~$4,338</div>
+          <div className="hl-value">~$4,439</div>
           <div className="hl-note">Disney + Krønasår + College Green</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
           <div className="hl-icon">💎</div>
           <div className="hl-label">Hyatt Points</div>
-          <div className="hl-value">118,650</div>
-          <div className="hl-note">CDG 43,650 + Andaz 75K</div>
+          <div className="hl-value">104,100</div>
+          <div className="hl-note">CDG 29,100 + Andaz 75K</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#1A6B3A' }}>
           <div className="hl-icon">🎢</div>
@@ -70,24 +70,24 @@ export default function CostSummary() {
       <div className="grand-total">
         <div className="gt-inner">
           <div className="gt-row">
-            <span>Flights (cash) — Delta/AF fees + Ryanair</span>
-            <span>$684.90</span>
+            <span>✅ Flights (cash) — Delta/AF fees + Ryanair + Aer Lingus fees</span>
+            <span>$1,560.06</span>
           </div>
           <div className="gt-row">
-            <span>Flights (points) — Air France Flying Blue PIT→CDG</span>
+            <span>✅ Flights (points) — Air France Flying Blue PIT→CDG</span>
             <span className="gt-pts">96K Flying Blue (Amex transfer)</span>
           </div>
           <div className="gt-row">
-            <span>Flights (points) — Aer Lingus DUB→PIT</span>
-            <span className="gt-pts">60K Avios (20K/pp)</span>
+            <span>✅ Flights (points) — Aer Lingus DUB→PIT</span>
+            <span className="gt-pts">60K Avios (Amex transfer)</span>
           </div>
           <div className="gt-row">
-            <span>Trains — TGV INOUI 9530 + Eurostar ES 9027 (Jul 9)</span>
-            <span>~$612</span>
+            <span>Trains</span>
+            <span>~$950–1,000</span>
           </div>
           <div className="gt-row">
             <span>Other ground transport</span>
-            <span>~$650–720</span>
+            <span>~$440–490</span>
           </div>
           <div className="gt-row">
             <span>Disney package (Sequoia Lodge + 4-day tickets)</span>
@@ -98,12 +98,12 @@ export default function CostSummary() {
             <span>$386.52 net</span>
           </div>
           <div className="gt-row">
-            <span>Hyatt Place Paris CDG (3 nights — points)</span>
-            <span className="gt-pts">43,650 Hyatt pts (14,550/night)</span>
+            <span>Hyatt Place Paris CDG (2 nights — points)</span>
+            <span className="gt-pts">29,100 Hyatt pts (14,550/night)</span>
           </div>
           <div className="gt-row">
-            <span>Hotel Krønasår (2 nights + park + Rulantica)</span>
-            <span>~$1,396</span>
+            <span>Hotel Krønasår (2 nights + 2-day park)</span>
+            <span>$1,497</span>
           </div>
           <div className="gt-row">
             <span>Andaz London Liverpool St (3 nights — points)</span>
@@ -116,7 +116,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$6,765–6,865</span>
+            <span>~$7,609–7,749</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
@@ -124,10 +124,10 @@ export default function CostSummary() {
           </div>
           <div className="gt-row grand pts">
             <span>HYATT POINTS (Chase UR → Hyatt 1:1)</span>
-            <span>118,650 pts</span>
+            <span>104,100 pts</span>
           </div>
           <div className="gt-row grand pts">
-            <span>AVIOS POINTS (Aer Lingus)</span>
+            <span>AVIOS POINTS (Amex MR → Aer Lingus)</span>
             <span>60,000 pts</span>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function CostSummary() {
       <div className="costs-disclaimer">
         Dining costs not shown — budget separately. Avenue Q and EDDFEST tickets excluded (pre-purchased).
         All Hyatt stays must be booked before May 2026 to lock in current award rates.
-        Europa-Park tickets and Rulantica fully included in Krønasår package.
+        Europa-Park 2-day tickets included in Krønasår package.
       </div>
     </div>
   )
