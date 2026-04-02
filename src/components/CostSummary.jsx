@@ -36,7 +36,7 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
           <div className="hl-icon">💎</div>
           <div className="hl-label">Hyatt Points</div>
-          <div className="hl-value">104,100</div>
+          <div className="hl-value">112,850</div>
           <div className="hl-note">CDG 29,100 + Andaz 75K</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#1A6B3A' }}>
@@ -116,7 +116,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$7,609–7,749</span>
+            <span>~$8,128–8,268</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
@@ -124,7 +124,7 @@ export default function CostSummary() {
           </div>
           <div className="gt-row grand pts">
             <span>HYATT POINTS (Chase UR → Hyatt 1:1)</span>
-            <span>104,100 pts</span>
+            <span>112,850 pts</span>
           </div>
           <div className="gt-row grand pts">
             <span>AVIOS POINTS (Amex MR → Aer Lingus)</span>

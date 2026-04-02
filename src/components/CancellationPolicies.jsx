@@ -14,15 +14,15 @@ export default function CancellationPolicies() {
     },
     {
       name: "Hyatt Place Paris CDG — Arrival Night",
-      date: "Jul 1",
+      date: "Jul 1–2",
       type: "hotel",
-      paid: "14,550 Hyatt pts",
-      deadline: "48 hours before check-in (Jun 29)",
-      penalty: "None if 48+ hrs out",
-      refund: "Points redeposited immediately",
+      paid: "4,750 Hyatt pts + €166.39 (~$183) Points + Cash",
+      deadline: "11:59 PM hotel time, 1 day before arrival (Jun 30)",
+      penalty: "1-night fee charged to card if canceled late or no-show",
+      refund: "Points redeposited, cash refunded if canceled before deadline",
       flexibility: "high",
-      status: "not_booked",
-      notes: "Late cancel/no-show: points refunded but card charged 1-night cash rate. Check confirmation for exact deadline.",
+      status: "booked",
+      notes: "Suite with 1 King Bed and Sofa Bed. Hyatt member #555518921C. Shuttle via station.link (€7/pp) from Roissypôle station near Terminal 3, runs 6:30–11:00 / 17:00–22:45 every 30 min. Contact: +33 1 48 16 12 34 / parisairport.house@hyatt.com",
     },
     {
       name: "Sequoia Lodge — Disneyland Paris Package",
@@ -33,8 +33,8 @@ export default function CancellationPolicies() {
       penalty: "None if 7+ days out — full forfeit inside 7 days",
       refund: "Full refund to original payment method",
       flexibility: "high",
-      status: "not_booked",
-      notes: "Applies to direct disneylandparis.com bookings. Third-party bookings follow that vendor's policy. 15% deposit at booking, balance due 60 days before.",
+      status: "booked",
+      notes: "Confirmation #33765384. $377.65 deposit paid, $2,177.33 balance due by Jun 22. Cancellation: full refund if 7+ days before arrival; full forfeit inside 7 days.",
     },
     {
       name: "Hyatt Place Paris CDG — Paris Nights",
@@ -62,15 +62,15 @@ export default function CancellationPolicies() {
     },
     {
       name: "Hotel Krønasår — Europa-Park Package",
-      date: "Jul 6–8",
+      date: "Jul 6–9",
       type: "hotel",
-      paid: "$1,497 cash (2 nights + 2-day park)",
+      paid: "€1,666.05 (~$1,833) cash (3 nights + 2-day park)",
       deadline: "3 days before (Jul 3) — or 29 days if promo rate (Jun 7)",
       penalty: "Standard: none if 3+ days. Promo: €50 fee if 29+ days, full forfeit inside 29 days.",
       refund: "Refund to original payment or voucher",
       flexibility: "check",
-      status: "not_booked",
-      notes: "Check confirmation for rate type. Package bookings with park tickets may fall under restricted rate terms. Contact reservation.europapark.de to confirm.",
+      status: "booked",
+      notes: "Reservation #H14296598. Payment due by Jul 2. Check MEINE REISE portal for tickets, extras, and digital room key. Contact: +49 7822 860-5679 / hotel@europapark.de",
     },
     {
       name: "Eurostar ES 9027 — Paris → London",
@@ -86,15 +86,15 @@ export default function CancellationPolicies() {
     },
     {
       name: "Andaz London Liverpool Street",
-      date: "Jul 9–11",
+      date: "Jul 9–12",
       type: "hotel",
-      paid: "75,000 Hyatt pts (3 nights)",
-      deadline: "48 hours before check-in (Jul 7)",
-      penalty: "None if 48+ hrs out",
-      refund: "75K points redeposited immediately",
+      paid: "79,000 Hyatt pts (29K + 25K + 25K)",
+      deadline: "24 hrs before 11:59 PM day of arrival (Jul 8)",
+      penalty: "1-night fee charged to card if canceled late or no-show",
+      refund: "79K points redeposited if canceled before deadline",
       flexibility: "high",
-      status: "not_booked",
-      notes: "Late cancel/no-show: card charged 1-night cash rate (Andaz runs £250–400+/night in July). Cancel via Hyatt app or hyatt.com.",
+      status: "booked",
+      notes: "Confirmation #24782647. 1 King Bed, rollaway bed requested. Award Category 6. 5% discretionary service charge on room rate. Grade II heritage building — rooms are uniquely designed. Hyatt member #555518921C.",
     },
     {
       name: "Avenue Q — Shaftesbury Theatre",
@@ -214,12 +214,20 @@ export default function CancellationPolicies() {
             <span className="cost-row-value">29-day cancel window</span>
           </div>
           <div className="cost-row odd">
+            <span className="cost-row-label">Jun 22 — Sequoia Lodge DLP balance due</span>
+            <span className="cost-row-value">$2,177.33 remaining</span>
+          </div>
+          <div className="cost-row even">
             <span className="cost-row-label">Jun 25 — Sequoia Lodge DLP</span>
             <span className="cost-row-value">7-day cancel window</span>
           </div>
+          <div className="cost-row odd">
+            <span className="cost-row-label">Jun 30 — Hyatt Place CDG (Jul 1 night)</span>
+            <span className="cost-row-value">11:59 PM cancel deadline</span>
+          </div>
           <div className="cost-row even">
-            <span className="cost-row-label">Jun 29 — Hyatt Place CDG (Jul 1 night)</span>
-            <span className="cost-row-value">48-hour cancel window</span>
+            <span className="cost-row-label">Jul 2 — Krønasår payment due</span>
+            <span className="cost-row-value">€1,666.05 (~$1,833)</span>
           </div>
           <div className="cost-row odd">
             <span className="cost-row-label">Jul 2 — Eurostar (Standard fare)</span>
@@ -234,8 +242,8 @@ export default function CancellationPolicies() {
             <span className="cost-row-value">3-day cancel window</span>
           </div>
           <div className="cost-row even">
-            <span className="cost-row-label">Jul 7 — Andaz London</span>
-            <span className="cost-row-value">48-hour cancel window</span>
+            <span className="cost-row-label">Jul 8 — Andaz London</span>
+            <span className="cost-row-value">24hr before 11:59 PM arrival day</span>
           </div>
         </div>
       </div>
