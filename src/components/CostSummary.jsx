@@ -116,7 +116,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$8,128–8,268</span>
+            <span>~$9,052–9,192</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
