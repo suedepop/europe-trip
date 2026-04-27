@@ -19,17 +19,17 @@ export const DAYS = [
     center: [47.5, -25.0],
     zoom: 3,
     stops: [
-      { lat: 40.4957, lon: -80.2329, name: "Pittsburgh Intl (PIT)", time: "4:55 PM", detail: "DL1353 · Economy Comfort · Seat 22D → Atlanta", icon: "✈" },
-      { lat: 33.6407, lon: -84.4277, name: "Atlanta (ATL)", time: "6:48 PM", detail: "Arrive Hartsfield-Jackson · connect to AF0033 · departs 8:05 PM", icon: "✈" },
+      { lat: 40.4957, lon: -80.2329, name: "Pittsburgh Intl (PIT)", time: "4:42 PM", detail: "DL1353 · Economy Comfort · Seat 22D → Atlanta", icon: "✈" },
+      { lat: 33.6407, lon: -84.4277, name: "Atlanta (ATL)", time: "6:35 PM", detail: "Arrive Hartsfield-Jackson · connect to AF0033 · departs 8:05 PM", icon: "✈" },
       { lat: 49.0097, lon: 2.5478, name: "Paris CDG (arrive Jul 1)", time: "10:35 AM+1", detail: "Terminal 2E · shuttle via station.link (€7/pp) from Roissypôle near T3, or taxi", icon: "✈" },
     ],
     entries: [
       { time: "Afternoon", title: "Drive to Pittsburgh International Airport", detail: "Fixed-rate long-term parking pre-arranged.", cost: "" },
-      { time: "4:55 PM", title: "DL1353 — PIT → ATL", detail: "Delta Economy Comfort. Seat 22D. 1h 53min to Atlanta Hartsfield-Jackson.", cost: "96K Flying Blue pts (Amex transfer) + $788.67" },
-      { time: "6:48 PM", title: "Arrive Atlanta (ATL)", detail: "Connect from Terminal S to Terminal I. AF0033 departs 8:05 PM.", cost: "" },
+      { time: "4:42 PM", title: "DL1353 — PIT → ATL", detail: "Delta Economy Comfort. Seat 22D. 1h 53min to Atlanta Hartsfield-Jackson.", cost: "96K Flying Blue pts (Amex transfer) + $788.67" },
+      { time: "6:35 PM", title: "Arrive Atlanta (ATL)", detail: "Connect from Terminal S to Terminal I. AF0033 departs 8:05 PM.", cost: "" },
       { time: "8:05 PM", title: "AF0033 — ATL → CDG", detail: "Air France Economy Comfort. Seat 21J. Overnight transatlantic ~8.5 hrs. Arrives CDG Terminal 2E at 10:35 AM Jul 1. Set watches to Paris time (+6 hrs). Sleep immediately.", cost: "Included above" },
     ],
-    note: "Delta/Air France flights PIT → ATL → CDG — 96,000 Flying Blue points (Amex transfer) + $788.67. Economy Comfort. 1h 17min connection at Atlanta.",
+    note: "Delta/Air France flights PIT → ATL → CDG — 96,000 Flying Blue points (Amex transfer) + $788.67. Economy Comfort. 1h 30min connection at Atlanta.",
   },
   {
     num: 1,
