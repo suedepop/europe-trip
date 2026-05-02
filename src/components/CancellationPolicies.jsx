@@ -61,19 +61,19 @@ export default function CancellationPolicies() {
       notes: "Reservation for 3 guests at 5:30 PM in Frontierland (Disneyland Park). Saloon-style steakhouse. Cancel or modify via the Disneyland Paris app or disneylandparis.com. Arrive ~10 min early to check in.",
     },
     {
-      name: "Hyatt Place Paris CDG — Paris Nights",
+      name: "Hôtel Le Milie Rose — Paris (Jul 5 night)",
       date: "Jul 5–6",
       type: "hotel",
-      paid: "29,100 Hyatt pts (2 nights)",
-      deadline: "48 hours before check-in (Jul 3)",
-      penalty: "None if 48+ hrs out",
-      refund: "Points redeposited immediately",
-      flexibility: "high",
-      status: "not_booked",
-      notes: "Same Hyatt policy as arrival night. Late cancel/no-show: card charged 1-night cash rate.",
+      paid: "€394 (~$433) — 2 rooms (Superior Double + Superior Twin)",
+      deadline: "Verify in confirmation email (Best Flexible rates typically allow free cancellation 24–48 hrs before arrival)",
+      penalty: "Best Flexible Rate — full refund if canceled before deadline; full charge if no-show",
+      refund: "Refund to Visa ending 9976 if canceled before deadline",
+      flexibility: "check",
+      status: "booked",
+      notes: "22 rue des Petites Écuries, 75010 Paris. +33 1 84 25 72 32 / info@hotellemilierose.com / www.hotellemilierose.com. Confirmations: #35415SG010781 (Superior Double — 1 Adult + 1 Child) + #35415SG010782 (Superior Twin — 1 Adult). Best Flexible Room Only Rate. 5-min walk to Gare de l'Est for next-day TGV INOUI to Europa-Park.",
     },
     {
-      name: "TGV Trains — SNCF (multiple legs)",
+      name: "TGV Trains — SNCF (other legs)",
       date: "Various",
       type: "train",
       paid: "Cash (varies by leg)",
@@ -82,7 +82,31 @@ export default function CancellationPolicies() {
       refund: "Refund to original payment method via sncf-connect.com",
       flexibility: "check",
       status: "not_booked",
-      notes: "Check each ticket in your sncf-connect.com account — fare name and conditions shown per ticket. Covers CDG↔Chessy, Paris Est↔Ringsheim legs.",
+      notes: "Check each ticket in your sncf-connect.com account — fare name and conditions shown per ticket. Covers any remaining CDG↔Chessy or other supplementary legs not yet booked.",
+    },
+    {
+      name: "TGV INOUI 9531 — Paris → Ringsheim/Europa-Park",
+      date: "Jul 6",
+      type: "train",
+      paid: "$285.50 (3 passengers · 1st Class)",
+      deadline: "Depends on fare class — typically 7+ days for free exchange/refund on flexible fares",
+      penalty: "Flexible fare: small fee or none. Prems/non-refundable: full loss.",
+      refund: "Refund to original payment method via sncf-connect.com or oui.sncf",
+      flexibility: "check",
+      status: "booked",
+      notes: "Mon Jul 6 · Departure 5:25 PM Paris Gare de l'Est · Arrival 7:59 PM Ringsheim/Europa-Park · 2h 34min direct. 1st Class · Coach 12 · Seats 208 (lower deck, window), 211 (lower deck, window), 207 (lower deck, corridor). Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Includes bar, WiFi, electrical outlets, nursery area. Boarding opens 5:23 PM (2 min before departure). Verify exact fare class refund/exchange terms in your sncf-connect.com booking.",
+    },
+    {
+      name: "TGV INOUI 9530 — Ringsheim/Europa-Park → Paris (Eurostar connection)",
+      date: "Jul 9",
+      type: "train",
+      paid: "€234 (3 passengers · 1st Class)",
+      deadline: "Depends on fare class — typically 7+ days for free exchange/refund on flexible fares",
+      penalty: "Flexible fare: small fee or none. Prems/non-refundable: full loss.",
+      refund: "Refund to original payment method via sncf-connect.com or oui.sncf",
+      flexibility: "check",
+      status: "booked",
+      notes: "Thu Jul 9 · Departure 6:57 AM Ringsheim/Europa-Park · Arrival 9:35 AM Paris Gare de l'Est · 2h 38min direct. 1st Class · Coach 13 · Seats 308 (lower deck, window), 307 (lower deck, corridor), 311 (lower deck, window). Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Bar, WiFi, electrical outlets. Connects to Eurostar 9023 (1h 37min connection — Eurostar check-in closes 10:42 AM).",
     },
     {
       name: "Hotel Krønasår — Europa-Park Package",
@@ -97,16 +121,16 @@ export default function CancellationPolicies() {
       notes: "Reservation #H14296598. Payment due by Jul 2. Check MEINE REISE portal for tickets, extras, and digital room key. Contact: +49 7822 860-5679 / hotel@europapark.de",
     },
     {
-      name: "Eurostar ES 9027 — Paris → London",
+      name: "Eurostar 9023 — Paris → London (1st Class)",
       date: "Jul 9",
       type: "train",
-      paid: "$355.36",
-      deadline: "7 days before departure (Jul 2) for Standard refund",
+      paid: "$355.36 (3 passengers · 1st Class)",
+      deadline: "Depends on fare class — typically 7 days before departure for Standard fare refund",
       penalty: "Standard: £25/pp refund fee. Standard Premier: no fee within 48 hrs. SNAP: non-refundable.",
       refund: "Refund to original payment, up to 28 days processing",
-      flexibility: "medium",
-      status: "not_booked",
-      notes: "Exchanges are free up to 1 hour before departure (pay any fare difference). Check your fare class on eurostar.com under 'Manage my booking'.",
+      flexibility: "check",
+      status: "booked",
+      notes: "Thu Jul 9 · Departure 11:12 AM Paris Gare du Nord · Arrival 12:30 PM London St Pancras · 2h 18min. 1st Class · Coach 14 · Seats 63, 64, 68. Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Bar onboard. Check-in/passport closes 30 min before departure (10:42 AM). Connects from TGV INOUI 9530 (arrives Paris Gare de l'Est 9:35 AM — 5-min walk to Gare du Nord, ~1h 37min total connection). Exchanges typically free up to 1 hour before departure (pay any fare difference). Verify exact fare class on eurostar.com under 'Manage my booking'.",
     },
     {
       name: "Andaz London Liverpool Street",
@@ -258,8 +282,8 @@ export default function CancellationPolicies() {
             <span className="cost-row-value">7-day cancel window</span>
           </div>
           <div className="cost-row even">
-            <span className="cost-row-label">Jul 3 — Hyatt Place CDG (Jul 5–6 nights)</span>
-            <span className="cost-row-value">48-hour cancel window</span>
+            <span className="cost-row-label">Jul 3–4 — Hôtel Le Milie Rose (Jul 5 night)</span>
+            <span className="cost-row-value">Verify in confirmation email</span>
           </div>
           <div className="cost-row odd">
             <span className="cost-row-label">Jul 3 — Krønasår (if standard rate)</span>

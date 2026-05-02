@@ -30,14 +30,14 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
           <div className="hl-label">Hotels (cash)</div>
-          <div className="hl-value">~$4,439</div>
-          <div className="hl-note">Disney + Krønasår + College Green</div>
+          <div className="hl-value">~$4,872</div>
+          <div className="hl-note">Disney + Le Milie Rose + Krønasår + College Green</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
           <div className="hl-icon">💎</div>
           <div className="hl-label">Hyatt Points</div>
-          <div className="hl-value">112,850</div>
-          <div className="hl-note">CDG 29,100 + Andaz 75K</div>
+          <div className="hl-value">83,750</div>
+          <div className="hl-note">CDG 4,750 + Andaz 79K</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#1A6B3A' }}>
           <div className="hl-icon">🎢</div>
@@ -98,8 +98,8 @@ export default function CostSummary() {
             <span>$386.52 net</span>
           </div>
           <div className="gt-row">
-            <span>Hyatt Place Paris CDG (2 nights — points)</span>
-            <span className="gt-pts">29,100 Hyatt pts (14,550/night)</span>
+            <span>Hôtel Le Milie Rose Paris (1 night, 2 rooms — Superior Double + Superior Twin)</span>
+            <span>€394 (~$433)</span>
           </div>
           <div className="gt-row">
             <span>Hotel Krønasår (2 nights + 2-day park)</span>
@@ -116,7 +116,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$9,052–9,192</span>
+            <span>~$9,485–9,625</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
@@ -124,7 +124,7 @@ export default function CostSummary() {
           </div>
           <div className="gt-row grand pts">
             <span>HYATT POINTS (Chase UR → Hyatt 1:1)</span>
-            <span>112,850 pts</span>
+            <span>83,750 pts</span>
           </div>
           <div className="gt-row grand pts">
             <span>AVIOS POINTS (Amex MR → Aer Lingus)</span>
