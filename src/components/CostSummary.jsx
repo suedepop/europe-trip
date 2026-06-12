@@ -24,13 +24,13 @@ export default function CostSummary() {
         <div className="highlight-card" style={{ borderColor: '#C9A84C' }}>
           <div className="hl-icon">✈</div>
           <div className="hl-label">Flights (cash)</div>
-          <div className="hl-value">$1,560</div>
-          <div className="hl-note">+ 96K Flying Blue + 60K Avios (Amex transfers)</div>
+          <div className="hl-value">$1,308</div>
+          <div className="hl-note">+ 96K Flying Blue + 92,250 Avios</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#003087' }}>
           <div className="hl-icon">🏨</div>
           <div className="hl-label">Hotels (cash)</div>
-          <div className="hl-value">~$4,872</div>
+          <div className="hl-value">~$4,961</div>
           <div className="hl-note">Disney + Le Milie Rose + Krønasår + College Green</div>
         </div>
         <div className="highlight-card" style={{ borderColor: '#6B3FA0' }}>
@@ -70,12 +70,16 @@ export default function CostSummary() {
       <div className="grand-total">
         <div className="gt-inner">
           <div className="gt-row">
-            <span>✅ Flights (cash) — Delta/AF fees + Ryanair + Aer Lingus fees</span>
-            <span>$1,560.06</span>
+            <span>✅ Flights (cash) — Delta/AF fees + British Airways + Aer Lingus fees</span>
+            <span>$1,308.06</span>
           </div>
           <div className="gt-row">
             <span>✅ Flights (points) — Air France Flying Blue PIT→CDG</span>
             <span className="gt-pts">96K Flying Blue (Amex transfer)</span>
+          </div>
+          <div className="gt-row">
+            <span>✅ Flights (points) — British Airways LHR→DUB</span>
+            <span className="gt-pts">32,250 Avios + $6 fees</span>
           </div>
           <div className="gt-row">
             <span>✅ Flights (points) — Aer Lingus DUB→PIT</span>
@@ -94,8 +98,8 @@ export default function CostSummary() {
             <span>$2,554.98</span>
           </div>
           <div className="gt-row">
-            <span>The College Green Hotel Dublin (1 night — $686.52 − $300 Amex credit)</span>
-            <span>$386.52 net</span>
+            <span>✅ The College Green Hotel Dublin, Autograph Collection (1 night — $776.25 − $300 Amex credit)</span>
+            <span>$476.25 net</span>
           </div>
           <div className="gt-row">
             <span>Hôtel Le Milie Rose Paris (1 night, 2 rooms — Superior Double + Superior Twin)</span>
@@ -116,7 +120,7 @@ export default function CostSummary() {
           <div className="gt-divider" />
           <div className="gt-row grand">
             <span>GRAND TOTAL (USD cash out-of-pocket)</span>
-            <span>~$9,485–9,625</span>
+            <span>~$9,323–9,463</span>
           </div>
           <div className="gt-row grand pts">
             <span>FLYING BLUE (Amex MR → Air France)</span>
@@ -127,8 +131,8 @@ export default function CostSummary() {
             <span>83,750 pts</span>
           </div>
           <div className="gt-row grand pts">
-            <span>AVIOS POINTS (Amex MR → Aer Lingus)</span>
-            <span>60,000 pts</span>
+            <span>AVIOS POINTS (BA Executive Club + Aer Lingus AerClub)</span>
+            <span>92,250 pts</span>
           </div>
         </div>
       </div>

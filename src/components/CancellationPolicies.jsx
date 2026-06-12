@@ -169,28 +169,28 @@ export default function CancellationPolicies() {
       notes: "Gigantic order ref 7522-0398-3462. 3× General Admission £145.08 each (inc. £17.58 booking fee) + £1.50 transaction fee. E-Tickets. Gates 1:00 PM. DO NOT resell on unauthorized platforms — booking will be canceled.",
     },
     {
-      name: "The College Green Hotel Dublin",
-      date: "Jul 12",
+      name: "The College Green Hotel Dublin, Autograph Collection",
+      date: "Jul 12–13",
       type: "hotel",
-      paid: "$686.52 − $300 Amex credit = $386.52 net",
-      deadline: "Check confirmation for deadline",
-      penalty: "Varies by rate — typically 24–48 hrs before check-in",
-      refund: "Refund to original payment method",
+      paid: "$776.25 paid in full ($300 Amex statement credit applies separately = $476.25 net)",
+      deadline: "Check confirmation for cancellation deadline (Amex Travel prepaid bookings are typically 24–72 hrs before check-in for refundable rates)",
+      penalty: "Varies by rate — verify the Trip ref ZOAX1046-93660 cancellation terms in your Amex Travel confirmation",
+      refund: "Refund to original payment method via amextravel.com or by phone with Amex Travel",
       flexibility: "check",
-      status: "not_booked",
-      notes: "Check your specific rate's cancellation terms. Amex $300 statement credit applies separately — verify credit posts even if booking is canceled.",
+      status: "booked",
+      notes: "Booked May 5, 2026 via Amex Travel. Trip ref ZOAX1046-93660. Marriott Bonvoy member #307180802. 1 room, 2 double beds — 2 adults + 1 child (16). Check-in Jul 12 at 3:00 PM, check-out Jul 13 by 12:00 PM. Address: College Green, Westmoreland Street, Dublin D02 HR67. Cost: $683.92 room + $92.33 taxes/fees = $776.25 paid today. Earns 5x Membership Rewards points. $300 Amex statement credit posts separately — confirm it lands on the Amex statement after travel. Verify credit still posts if booking is canceled.",
     },
     {
-      name: "Ryanair — LTN → DUB",
+      name: "British Airways BA0828 — LHR → DUB (Avios)",
       date: "Jul 12",
       type: "flight",
-      paid: "$258 ($86/pp)",
-      deadline: "Non-refundable",
-      penalty: "Full loss (minus tiny tax refund)",
-      refund: "Only government taxes/airport charges refundable (a few £ per ticket)",
-      flexibility: "none",
-      status: "not_booked",
-      notes: "Flight changes allowed up to 2.5 hrs before departure for €35–55/pp + fare difference. Changing is better than canceling if you can't travel.",
+      paid: "32,250 Avios + $6.00 fees (Amex Personal ending 1004)",
+      deadline: "Up to 24 hours before departure for cancellation (Avios award rules)",
+      penalty: "BA Executive Club: ~£35/$55 per person cancellation fee. Inside 24 hrs: no refund.",
+      refund: "Avios redeposited to BA Executive Club + taxes/fees refunded minus cancellation fee. Cancel via ba.com 'Manage My Booking'.",
+      flexibility: "medium",
+      status: "booked",
+      notes: "Booking ref YO6AYC (e-ticket). 10:30 AM LHR T5 → 12:00 PM Dublin T2 · 1h 30min · Euro Traveller. Booked for Theodore Cromwell (BA Executive Club #05676589), Catrina Cromwell, Preston Cromwell. Charged $6.00 to American Express Personal card ending 1004 + 32,250 Avios from BA Executive Club. Baggage per person: 1 handbag (40×30×15cm) + 1 cabin bag (56×45×25cm) + 1 checked bag at 23kg (51lbs). Confirmation sent to tedcromwell@gmail.com.",
     },
     {
       name: "Aer Lingus — DUB → PIT (Avios)",
@@ -249,7 +249,7 @@ export default function CancellationPolicies() {
           <div className="hl-icon">🔒</div>
           <div className="hl-label">Non-Refundable</div>
           <div className="hl-value">{policies.filter(p => p.flexibility === 'none').length}</div>
-          <div className="hl-note">Avenue Q + EDDFEST + Ryanair</div>
+          <div className="hl-note">Avenue Q + EDDFEST</div>
         </div>
       </div>
 
