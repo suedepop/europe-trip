@@ -6,6 +6,7 @@ import CancellationPolicies from './components/CancellationPolicies'
 import CellPhones from './components/CellPhones'
 import DisneylandCheatSheet from './components/DisneylandCheatSheet'
 import EuropaParkCheatSheet from './components/EuropaParkCheatSheet'
+import ParisCheatSheet from './components/ParisCheatSheet'
 
 export default function App() {
   const [activeDay, setActiveDay] = useState(1)
@@ -125,6 +126,15 @@ export default function App() {
               <span className="day-btn-date">Parks</span>
               <span className="day-btn-title">Europa Park</span>
             </button>
+            <button
+              className={`day-btn ${panel === 'paris' ? 'active' : ''}`}
+              style={panel === 'paris' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
+              onClick={() => setPanel('paris')}
+            >
+              <span className="day-btn-num" style={panel === 'paris' ? {} : { color: '#2E7D32' }}>🗼</span>
+              <span className="day-btn-date">City</span>
+              <span className="day-btn-title">Paris Sightseeing</span>
+            </button>
           </div>
         </nav>
       </aside>
@@ -141,6 +151,8 @@ export default function App() {
           <DisneylandCheatSheet />
         ) : panel === 'europapark' ? (
           <EuropaParkCheatSheet />
+        ) : panel === 'paris' ? (
+          <ParisCheatSheet />
         ) : (
           <DayView day={day} />
         )}
