@@ -4,12 +4,13 @@ import DayView from './components/DayView'
 import CostSummary from './components/CostSummary'
 import CancellationPolicies from './components/CancellationPolicies'
 import CellPhones from './components/CellPhones'
+import DisneylandCheatSheet from './components/DisneylandCheatSheet'
+import EuropaParkCheatSheet from './components/EuropaParkCheatSheet'
 
 export default function App() {
   const [activeDay, setActiveDay] = useState(1)
-  const [showCosts, setShowCosts] = useState(false)
-  const [showPolicies, setShowPolicies] = useState(false)
-  const [showPhones, setShowPhones] = useState(false)
+  // panel: null = day view, otherwise a Summary/Cheat-Sheet view id
+  const [panel, setPanel] = useState(null)
   const [sidebarOpen, setSidebarOpen] = useState(true)
 
   const day = DAYS.find(d => d.num === activeDay)
@@ -50,18 +51,19 @@ export default function App() {
                 {segDays.map(n => {
                   const d = DAYS.find(x => x.num === n)
                   if (!d) return null
+                  const isActive = activeDay === n && panel === null
                   return (
                     <button
                       key={n}
-                      className={`day-btn ${activeDay === n && !showCosts && !showPolicies && !showPhones ? 'active' : ''}`}
-                      style={activeDay === n && !showCosts && !showPolicies && !showPhones ? {
+                      className={`day-btn ${isActive ? 'active' : ''}`}
+                      style={isActive ? {
                         background: seg.color,
                         borderColor: seg.color,
                       } : { borderColor: seg.color + '40' }}
-                      onClick={() => { setActiveDay(n); setShowCosts(false); setShowPolicies(false); setShowPhones(false) }}
+                      onClick={() => { setActiveDay(n); setPanel(null) }}
                     >
                       <span className="day-btn-num" style={
-                        activeDay === n && !showCosts && !showPolicies && !showPhones ? {} : { color: seg.color }
+                        isActive ? {} : { color: seg.color }
                       }>D{n}</span>
                       <span className="day-btn-date">{d.date.replace(/^\w+ /, '')}</span>
                       <span className="day-btn-title">{d.title}</span>
@@ -75,31 +77,53 @@ export default function App() {
           <div className="seg-group">
             <div className="seg-label" style={{ color: '#C9A84C' }}>SUMMARY</div>
             <button
-              className={`day-btn ${showCosts ? 'active' : ''}`}
-              style={showCosts ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => { setShowCosts(true); setShowPolicies(false); setShowPhones(false) }}
+              className={`day-btn ${panel === 'costs' ? 'active' : ''}`}
+              style={panel === 'costs' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
+              onClick={() => setPanel('costs')}
             >
-              <span className="day-btn-num" style={showCosts ? {} : { color: '#C9A84C' }}>💰</span>
+              <span className="day-btn-num" style={panel === 'costs' ? {} : { color: '#C9A84C' }}>💰</span>
               <span className="day-btn-date">Costs</span>
               <span className="day-btn-title">Full Cost Summary</span>
             </button>
             <button
-              className={`day-btn ${showPolicies ? 'active' : ''}`}
-              style={showPolicies ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => { setShowPolicies(true); setShowCosts(false); setShowPhones(false) }}
+              className={`day-btn ${panel === 'policies' ? 'active' : ''}`}
+              style={panel === 'policies' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
+              onClick={() => setPanel('policies')}
             >
-              <span className="day-btn-num" style={showPolicies ? {} : { color: '#C9A84C' }}>📋</span>
+              <span className="day-btn-num" style={panel === 'policies' ? {} : { color: '#C9A84C' }}>📋</span>
               <span className="day-btn-date">Bookings</span>
               <span className="day-btn-title">Bookings & Policies</span>
             </button>
             <button
-              className={`day-btn ${showPhones ? 'active' : ''}`}
-              style={showPhones ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => { setShowPhones(true); setShowCosts(false); setShowPolicies(false) }}
+              className={`day-btn ${panel === 'phones' ? 'active' : ''}`}
+              style={panel === 'phones' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
+              onClick={() => setPanel('phones')}
             >
-              <span className="day-btn-num" style={showPhones ? {} : { color: '#C9A84C' }}>📱</span>
+              <span className="day-btn-num" style={panel === 'phones' ? {} : { color: '#C9A84C' }}>📱</span>
               <span className="day-btn-date">Phones</span>
               <span className="day-btn-title">Cell Phones</span>
+            </button>
+          </div>
+
+          <div className="seg-group">
+            <div className="seg-label" style={{ color: '#2E7D32' }}>CHEAT SHEETS</div>
+            <button
+              className={`day-btn ${panel === 'disneyland' ? 'active' : ''}`}
+              style={panel === 'disneyland' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
+              onClick={() => setPanel('disneyland')}
+            >
+              <span className="day-btn-num" style={panel === 'disneyland' ? {} : { color: '#2E7D32' }}>🏰</span>
+              <span className="day-btn-date">Parks</span>
+              <span className="day-btn-title">Disneyland</span>
+            </button>
+            <button
+              className={`day-btn ${panel === 'europapark' ? 'active' : ''}`}
+              style={panel === 'europapark' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
+              onClick={() => setPanel('europapark')}
+            >
+              <span className="day-btn-num" style={panel === 'europapark' ? {} : { color: '#2E7D32' }}>🎢</span>
+              <span className="day-btn-date">Parks</span>
+              <span className="day-btn-title">Europa Park</span>
             </button>
           </div>
         </nav>
@@ -107,12 +131,16 @@ export default function App() {
 
       {/* Main content */}
       <main className="main">
-        {showCosts ? (
+        {panel === 'costs' ? (
           <CostSummary />
-        ) : showPolicies ? (
+        ) : panel === 'policies' ? (
           <CancellationPolicies />
-        ) : showPhones ? (
+        ) : panel === 'phones' ? (
           <CellPhones />
+        ) : panel === 'disneyland' ? (
+          <DisneylandCheatSheet />
+        ) : panel === 'europapark' ? (
+          <EuropaParkCheatSheet />
         ) : (
           <DayView day={day} />
         )}

@@ -491,6 +491,286 @@ body { font-family: var(--font-body); background: #0F1A2E; color: #222; }
   line-height: 1.6;
 }
 
+/* ─── Cheat Sheet ───────────────────────────────────────────────────────── */
+.cs-perk {
+  margin-top: 12px;
+  display: inline-block;
+  background: var(--gold-light);
+  color: var(--navy);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+  padding: 5px 11px;
+  border-radius: 7px;
+}
+
+.cs-body { padding: 0 0 8px; background: #F7F5F0; }
+
+.cs-legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px 24px 6px;
+}
+.cs-leg {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.cs-dot { flex: 0 0 auto; width: 14px; height: 14px; border-radius: 4px; margin-top: 3px; }
+.cs-leg b { font-size: 12.5px; font-weight: 700; color: var(--navy); }
+.cs-leg span { display: block; font-size: 11px; color: #888; margin-top: 1px; }
+
+.cs-rules {
+  margin: 14px 24px 6px;
+  background: var(--gold-light);
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  padding: 13px 16px;
+}
+.cs-rules h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: var(--navy);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.cs-rules ul { margin: 0; padding-left: 18px; }
+.cs-rules li { font-size: 12.5px; margin: 4px 0; color: #444; line-height: 1.45; }
+
+.cs-day { margin: 24px 24px 0; }
+.cs-day-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--navy);
+  padding-bottom: 8px;
+}
+.cs-day-no {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  background: var(--navy);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+.cs-day-head h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+  color: var(--navy);
+}
+.cs-tag-busy {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: #BC5F18;
+  padding: 4px 9px;
+  border-radius: 6px;
+}
+
+.cs-plan {
+  margin: 14px 0 6px;
+  border: 2px dashed #2C7D50;
+  background: #E5F2EA;
+  border-radius: 12px;
+  padding: 13px 15px;
+}
+.cs-plan h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 13px;
+  color: #2C7D50;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.cs-seq { margin: 0; font-size: 14px; font-weight: 600; color: var(--navy); }
+.cs-arrow { color: #2C7D50; font-weight: 700; }
+.cs-plan-note { margin-top: 6px; font-size: 12px; color: #586259; line-height: 1.5; }
+
+.cs-land {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+  color: var(--navy);
+  margin: 18px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cs-ride {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-left-width: 5px;
+  border-radius: 10px;
+  padding: 10px 13px;
+  margin: 8px 0;
+}
+.cs-ride-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: flex-start;
+}
+.cs-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--navy);
+}
+.cs-chip {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+.cs-meta {
+  font-size: 11.5px;
+  color: #777;
+  margin: 3px 0 0;
+  font-variant-numeric: tabular-nums;
+}
+.cs-note { font-size: 12.5px; margin: 6px 0 0; color: #444; line-height: 1.5; }
+.cs-note strong { color: var(--navy); }
+
+.cs-verdict {
+  margin: 14px 0 0;
+  border: 2px solid var(--navy);
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: var(--pale-blue);
+}
+.cs-verdict h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  color: var(--navy);
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.cs-verdict p { margin: 0; font-size: 12.5px; line-height: 1.55; color: #444; }
+.cs-verdict strong { color: var(--navy); }
+
+/* Europa Park: two free tools */
+.cs-tools {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px 24px 6px;
+}
+.cs-tool {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+.cs-tool h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.cs-tool p { margin: 0; font-size: 11.5px; color: #777; line-height: 1.5; }
+
+/* Europa Park: single-line legend rows */
+.cs-leg-row { align-items: center; }
+.cs-leg-row b { font-size: 12px; font-weight: 600; color: var(--navy); }
+
+/* Europa Park: "hot" opening-move plan (red dashed) */
+.cs-plan-hot { border-color: #B23A2E; background: #F6E2DE; }
+.cs-plan-hot h3 { color: #B23A2E; }
+.cs-plan-hot ol { margin: 0; padding-left: 20px; }
+.cs-plan-hot li { font-size: 12.5px; margin: 5px 0; color: #444; line-height: 1.5; }
+.cs-plan-hot li b { color: var(--navy); }
+
+/* Europa Park: demand tier headers */
+.cs-tier {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: var(--navy);
+  margin: 24px 24px 8px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.cs-tier-pill { width: 16px; height: 16px; border-radius: 5px; flex: 0 0 auto; }
+.cs-tier small {
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 11px;
+  color: #888;
+  margin-left: auto;
+}
+
+/* Europa Park: ride margins (tiers handle their own left-margin via .cs-day; here rides sit full-width in cs-body) */
+.cs-body > div > .cs-ride { margin-left: 24px; margin-right: 24px; }
+
+/* Europa Park: ride badges + best-time line */
+.cs-badges {
+  display: flex;
+  gap: 5px;
+  flex: 0 0 auto;
+  margin-top: 3px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.cs-badge {
+  font-size: 9.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.cs-best {
+  font-size: 12px;
+  margin: 6px 0 0;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.45;
+}
+.cs-best::before { content: "⏱ "; }
+
+@media (max-width: 640px) {
+  .cs-legend { grid-template-columns: 1fr; }
+  .cs-tools { grid-template-columns: 1fr; }
+  .cs-name { font-size: 16px; }
+}
+
 /* ─── Leaflet overrides ─────────────────────────────────────────────────── */
 .leaflet-popup-content-wrapper {
   border-radius: 8px;
