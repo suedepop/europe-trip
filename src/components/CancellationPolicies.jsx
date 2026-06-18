@@ -34,7 +34,7 @@ export default function CancellationPolicies() {
       refund: "Full refund to original payment method",
       flexibility: "high",
       status: "booked",
-      notes: "Confirmation #33765384. $377.65 deposit paid, $2,177.33 balance due by Jun 22. Cancellation: full refund if 7+ days before arrival; full forfeit inside 7 days.",
+      notes: "Confirmation #33765384. ✅ PAID IN FULL — $2,554.98 received ($377.65 deposit + $2,177.33 balance). Cancellation: full refund if 7+ days before arrival; full forfeit inside 7 days.",
     },
     {
       name: "The Steakhouse — Disney Village",
@@ -263,7 +263,7 @@ export default function CancellationPolicies() {
           </div>
           <div className="cost-row odd">
             <span className="cost-row-label">Jun 22 — Sequoia Lodge DLP balance due</span>
-            <span className="cost-row-value">$2,177.33 remaining</span>
+            <span className="cost-row-value">✅ PAID IN FULL — $2,554.98</span>
           </div>
           <div className="cost-row even">
             <span className="cost-row-label">Jun 25 — Sequoia Lodge DLP</span>
