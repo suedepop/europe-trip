@@ -9,7 +9,8 @@
       "Bash(node --check src/data/itinerary.js)",
       "WebFetch(domain:www.roissypole.info)",
       "WebFetch(domain:www.parcasterix.fr)",
-      "WebFetch(domain:www.ironmaiden.knebworth.com)"
+      "WebFetch(domain:www.ironmaiden.knebworth.com)",
+      "WebFetch(domain:www.cartandhorses.london)"
     ]
   }
 }
