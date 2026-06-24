@@ -4,6 +4,7 @@ import DayView from './components/DayView'
 import CostSummary from './components/CostSummary'
 import CancellationPolicies from './components/CancellationPolicies'
 import CellPhones from './components/CellPhones'
+import SummaryGate from './components/SummaryGate'
 import DisneylandCheatSheet from './components/DisneylandCheatSheet'
 import EuropaParkCheatSheet from './components/EuropaParkCheatSheet'
 import ParisCheatSheet from './components/ParisCheatSheet'
@@ -152,11 +153,11 @@ export default function App() {
       {/* Main content */}
       <main className="main">
         {panel === 'costs' ? (
-          <CostSummary />
+          <SummaryGate><CostSummary /></SummaryGate>
         ) : panel === 'policies' ? (
-          <CancellationPolicies />
+          <SummaryGate><CancellationPolicies /></SummaryGate>
         ) : panel === 'phones' ? (
-          <CellPhones />
+          <SummaryGate><CellPhones /></SummaryGate>
         ) : panel === 'disneyland' ? (
           <DisneylandCheatSheet />
         ) : panel === 'europapark' ? (

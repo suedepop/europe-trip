@@ -150,6 +150,9 @@ export default function DayView({ day }) {
                 {entry.cost && (
                   <div className="tl-cost" style={{ color: day.color }}>{entry.cost}</div>
                 )}
+                {entry.app && (
+                  <div className="tl-app-badge">📱 App: {entry.app}</div>
+                )}
               </div>
             </div>
           ))}
