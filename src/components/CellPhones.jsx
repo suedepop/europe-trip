@@ -60,6 +60,69 @@ export default function CellPhones() {
     { flag: "🇮🇪", name: "Ireland", where: "Dublin", dayPass: true, esim: true },
   ]
 
+  // Trip-specific apps to install on all three iPhone 14s
+  const appGroups = [
+    {
+      cat: "✈️ Flights — boarding passes & check-in",
+      apps: [
+        { name: "Fly Delta", must: true, why: "Boarding pass + gate info for the PIT→ATL leg (Delta-operated DL1353)." },
+        { name: "Air France", must: true, why: "Manage the Flying Blue PIT→ATL→CDG booking; boarding pass for ATL→CDG (AF0033)." },
+        { name: "British Airways", must: true, why: "BA0828 LHR→DUB — online check-in opens 24h before; mobile boarding pass + seat selection." },
+        { name: "Aer Lingus", must: true, why: "EI81 DUB→PIT — mobile boarding pass for the flight home + Dublin US Preclearance." },
+      ],
+    },
+    {
+      cat: "🚆 Trains & metro — tickets & planning",
+      apps: [
+        { name: "SNCF Connect", must: true, why: "TGV INOUI tickets Paris↔Europa-Park (and any other French rail). Holds your e-tickets." },
+        { name: "OUIGO", must: true, why: "CDG→Disney (Marne-la-Vallée) OUIGO train — QR boarding codes + extra-bag add-on." },
+        { name: "Eurostar", must: true, why: "Paris→London e-tickets + live check-in / platform info." },
+        { name: "Île-de-France Mobilités", must: true, why: "Buy & store Paris Metro/RER tickets on your phone (digital Navigo). Used all over Paris." },
+        { name: "Trainline", must: true, why: "UK National Rail — Thameslink to Stevenage on festival day; pre-book + mobile tickets." },
+        { name: "TfL Go", must: false, why: "London Underground / Elizabeth Line journey planner. You pay by tapping a contactless card / Apple Pay — no ticket needed." },
+      ],
+    },
+    {
+      cat: "🏨 Hotels — mobile key & reservations",
+      apps: [
+        { name: "World of Hyatt", must: true, why: "Hyatt Place CDG + Andaz London — reservations, check-in, and mobile room key." },
+        { name: "Marriott Bonvoy", must: true, why: "The College Green Hotel Dublin (Autograph) — reservation + mobile key." },
+      ],
+    },
+    {
+      cat: "🎢 Theme parks",
+      apps: [
+        { name: "Disneyland Paris", must: true, why: "Park maps, live ride wait times, Premier Access purchases, and dining check-in. Key cards are your park tickets." },
+        { name: "Europa-Park", must: true, why: "Wait times + park map; plus the 'Meine Reise' portal for your Krønasår booking, tickets, and digital room key." },
+      ],
+    },
+    {
+      cat: "🎟️ Events & ground transport",
+      apps: [
+        { name: "Addison Lee", must: true, why: "Track your Knebworth→Andaz pickup driver and message them on the night." },
+        { name: "Gigantic Tickets", must: false, why: "Account access for your EDDFEST + Stevenage shuttle e-tickets (also emailed)." },
+      ],
+    },
+    {
+      cat: "🗺️ Navigation",
+      apps: [
+        { name: "Google Maps", must: true, why: "Download OFFLINE areas for Paris, Rust, London & Dublin before you fly. Best all-round transit + walking directions." },
+        { name: "Citymapper", must: false, why: "Superb city transit app for Paris, London & Dublin — clearer metro/bus routing than Maps in dense cities." },
+      ],
+    },
+    {
+      cat: "💬 Communication & utilities",
+      apps: [
+        { name: "WhatsApp", must: true, why: "How most of Europe messages/calls; free over Wi-Fi or data. Set up on all three phones." },
+        { name: "Google Translate", must: true, why: "Download French & German offline packs — camera-translate menus and signs." },
+        { name: "Apple Wallet", must: true, why: "Built-in — add boarding passes & event tickets, and tap to pay (incl. London transit)." },
+        { name: "myAT&T", must: true, why: "Add the International Day Pass to each line and track usage/charges." },
+        { name: "XE Currency", must: false, why: "Quick € / £ ↔ $ conversions; works offline with last-synced rates." },
+        { name: "Airalo", must: false, why: "Only if you take the data-eSIM route — buy/manage your Europe eSIM (see options above)." },
+      ],
+    },
+  ]
+
   return (
     <div className="costs-view">
       <div className="costs-header">
@@ -196,8 +259,61 @@ export default function CellPhones() {
             <span className="cost-row-label">6. (eSIM route only) Configure data lines</span>
             <span className="cost-row-value">Install &amp; test each eSIM on Wi-Fi the night before. Set travel eSIM as the data line; turn Data Roaming OFF on the AT&T line so it never auto-charges.</span>
           </div>
+          <div className="cost-row odd">
+            <span className="cost-row-label">7. Install your trip apps</span>
+            <span className="cost-row-value">Add every app in the "Apps to Install" list below to all three iPhones, sign in, and pull tickets into Apple Wallet — do it on home Wi-Fi before you fly.</span>
+          </div>
         </div>
       </div>
+
+      {/* Apps to install */}
+      <div className="cost-section">
+        <h2 className="cost-section-title">📲 APPS TO INSTALL — ALL THREE IPHONES</h2>
+        <div className="cost-table">
+          <div className="cost-row even">
+            <span className="cost-row-label">Before you fly</span>
+            <span className="cost-row-value" style={{ lineHeight: 1.5 }}>
+              Install these from the App Store and sign in / download your tickets while on home Wi-Fi, then add
+              boarding passes and event tickets to <strong>Apple Wallet</strong> so they work offline. Make sure
+              <strong> Preston's iPhone</strong> has them too — approve via Family Sharing if any need it.
+              <span style={{ display: 'inline-block', marginTop: '4px' }}>
+                <span style={{ fontSize: '0.78em', fontWeight: 600, color: '#fff', background: '#2E7D32', padding: '1px 6px', borderRadius: '4px' }}>MUST</span>
+                &nbsp;= you'll need it for a booking on this trip &nbsp;·&nbsp;
+                <span style={{ fontSize: '0.78em', fontWeight: 600, color: '#fff', background: '#9E9E9E', padding: '1px 6px', borderRadius: '4px' }}>OPTIONAL</span>
+                &nbsp;= helpful but not essential.
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {appGroups.map((g, i) => (
+        <div key={i} className="cost-section">
+          <h2 className="cost-section-title">{g.cat}</h2>
+          <div className="cost-table">
+            {g.apps.map((a, j) => (
+              <div key={j} className={`cost-row ${j % 2 === 0 ? 'odd' : 'even'}`}>
+                <span className="cost-row-label">
+                  {a.name}{' '}
+                  <span style={{
+                    fontSize: '0.7em',
+                    fontWeight: 600,
+                    color: '#fff',
+                    background: a.must ? '#2E7D32' : '#9E9E9E',
+                    padding: '1px 6px',
+                    borderRadius: '4px',
+                    letterSpacing: '0.04em',
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {a.must ? 'MUST' : 'OPTIONAL'}
+                  </span>
+                </span>
+                <span className="cost-row-value" style={{ fontSize: '0.9em', lineHeight: 1.45 }}>{a.why}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
 
       <div className="costs-disclaimer">
         Pricing verified June 2026. AT&T International Day Pass: $12/day first line + $6/day each additional line, capped at
