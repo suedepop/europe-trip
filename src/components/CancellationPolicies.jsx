@@ -73,6 +73,18 @@ export default function CancellationPolicies() {
       notes: "22 rue des Petites Écuries, 75010 Paris. +33 1 84 25 72 32 / info@hotellemilierose.com / www.hotellemilierose.com. Confirmations: #35415SG010781 (Superior Double — 1 Adult + 1 Child) + #35415SG010782 (Superior Twin — 1 Adult). Best Flexible Room Only Rate. 5-min walk to Gare de l'Est for next-day TGV INOUI to Europa-Park.",
     },
     {
+      name: "OUIGO 7897 — CDG Airport → Disneyland (Marne-la-Vallée Chessy)",
+      date: "Jul 2",
+      type: "train",
+      paid: "€71 (3 passengers · OUIGO Essential)",
+      deadline: "Exchange only — non-refundable",
+      penalty: "Exchangeable under certain conditions; ticket is non-refundable (no cash refund for no-show or cancellation)",
+      refund: "None — exchange via the OUIGO app under 'My bookings' subject to fare conditions",
+      flexibility: "low",
+      status: "booked",
+      notes: "Booking ZAH754. Thu Jul 2 · Departure 11:00 AM Paris Roissy-CDG Airport 2 (TGV) · Arrival 11:11 AM Marne-la-Vallée-Chessy-Disneyland · 11 min direct (High Speed train no. 7897). 3 Adults: Cromwell Theodore, Catrina Cromwell, Preston Cromwell. Carriage 11, Seats 184/185/186 (upper deck). Add-ons: 3 seats with power outlet (€9) + 1 additional piece of luggage (€5). Base fare €57. Tickets downloadable in the OUIGO app from Jun 28 — save all 3 offline. Boarding closes 5 min before departure. No bar car onboard.",
+    },
+    {
       name: "TGV Trains — SNCF (other legs)",
       date: "Various",
       type: "train",
@@ -82,7 +94,7 @@ export default function CancellationPolicies() {
       refund: "Refund to original payment method via sncf-connect.com",
       flexibility: "check",
       status: "not_booked",
-      notes: "Check each ticket in your sncf-connect.com account — fare name and conditions shown per ticket. Covers any remaining CDG↔Chessy or other supplementary legs not yet booked.",
+      notes: "Check each ticket in your sncf-connect.com account — fare name and conditions shown per ticket. Covers any remaining supplementary legs not yet booked.",
     },
     {
       name: "TGV INOUI 9531 — Paris → Ringsheim/Europa-Park",
@@ -270,26 +282,30 @@ export default function CancellationPolicies() {
             <span className="cost-row-value">7-day cancel window</span>
           </div>
           <div className="cost-row odd">
+            <span className="cost-row-label">Jun 28 — OUIGO 7897 tickets downloadable</span>
+            <span className="cost-row-value">Save all 3 in the OUIGO app (offline)</span>
+          </div>
+          <div className="cost-row even">
             <span className="cost-row-label">Jun 30 — Hyatt Place CDG (Jul 1 night)</span>
             <span className="cost-row-value">11:59 PM cancel deadline</span>
           </div>
-          <div className="cost-row even">
+          <div className="cost-row odd">
             <span className="cost-row-label">Jul 2 — Krønasår payment due</span>
             <span className="cost-row-value">€1,666.05 (~$1,833)</span>
           </div>
-          <div className="cost-row odd">
+          <div className="cost-row even">
             <span className="cost-row-label">Jul 2 — Eurostar (Standard fare)</span>
             <span className="cost-row-value">7-day cancel window</span>
           </div>
-          <div className="cost-row even">
+          <div className="cost-row odd">
             <span className="cost-row-label">Jul 3–4 — Hôtel Le Milie Rose (Jul 5 night)</span>
             <span className="cost-row-value">Verify in confirmation email</span>
           </div>
-          <div className="cost-row odd">
+          <div className="cost-row even">
             <span className="cost-row-label">Jul 3 — Krønasår (if standard rate)</span>
             <span className="cost-row-value">3-day cancel window</span>
           </div>
-          <div className="cost-row even">
+          <div className="cost-row odd">
             <span className="cost-row-label">Jul 8 — Andaz London</span>
             <span className="cost-row-value">24hr before 11:59 PM arrival day</span>
           </div>
