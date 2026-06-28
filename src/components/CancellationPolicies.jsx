@@ -70,7 +70,7 @@ export default function CancellationPolicies() {
       refund: "None — exchange via the OUIGO app under 'My bookings' subject to fare conditions",
       flexibility: "low",
       status: "booked",
-      notes: "Booking ZAH754. Thu Jul 2 · Departure 11:00 AM Paris Roissy-CDG Airport 2 (TGV) · Arrival 11:11 AM Marne-la-Vallée-Chessy-Disneyland · 11 min direct (High Speed train no. 7897). 3 Adults: Cromwell Theodore, Catrina Cromwell, Preston Cromwell. Carriage 11, Seats 184/185/186 (upper deck). Add-ons: 3 seats with power outlet (€9) + 1 additional piece of luggage (€5). Base fare €57. Tickets downloadable in the OUIGO app from Jun 28 — save all 3 offline. Boarding closes 5 min before departure. No bar car onboard.",
+      notes: "Booking ZAH754. Thu Jul 2 · Departure 11:00 AM Paris Roissy-CDG Airport 2 (TGV) · Arrival 11:11 AM Marne-la-Vallée-Chessy-Disneyland · 11 min direct (High Speed train no. 7897). 3 Adults: Cromwell Theodore, Catrina Cromwell, Preston Cromwell. Carriage 11, Seats 184/185/186 (upper deck). Add-ons: 3 seats with power outlet (€9) + 1 additional piece of luggage (€5). Base fare €57. ✅ All 3 tickets are saved in Apple Wallet (QR codes work offline). Boarding closes 5 min before departure. No bar car onboard.",
     },
     {
       name: "TGV Trains — SNCF (other legs)",
@@ -94,7 +94,7 @@ export default function CancellationPolicies() {
       refund: "Refund to original payment method via sncf-connect.com or oui.sncf",
       flexibility: "check",
       status: "booked",
-      notes: "Mon Jul 6 · Departure 5:25 PM Paris Gare de l'Est · Arrival 7:59 PM Ringsheim/Europa-Park · 2h 34min direct. 1st Class · Coach 12 · Seats 208 (lower deck, window), 211 (lower deck, window), 207 (lower deck, corridor). Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Includes bar, WiFi, electrical outlets, nursery area. Boarding opens 5:23 PM (2 min before departure). Verify exact fare class refund/exchange terms in your sncf-connect.com booking.",
+      notes: "Mon Jul 6 · Departure 5:25 PM Paris Gare de l'Est · Arrival 7:59 PM Ringsheim/Europa-Park · 2h 34min direct. 1st Class · Coach 12 · Seats 208 (lower deck, window), 211 (lower deck, window), 207 (lower deck, corridor). Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Includes bar, WiFi, electrical outlets, nursery area. Boarding opens 5:23 PM (2 min before departure). 📲 All 3 tickets saved in Apple Wallet (offline). Verify exact fare class refund/exchange terms in your sncf-connect.com booking.",
     },
     {
       name: "TGV INOUI 9530 — Ringsheim/Europa-Park → Paris (Eurostar connection)",
@@ -106,7 +106,7 @@ export default function CancellationPolicies() {
       refund: "Refund to original payment method via sncf-connect.com or oui.sncf",
       flexibility: "check",
       status: "booked",
-      notes: "Thu Jul 9 · Departure 6:57 AM Ringsheim/Europa-Park · Arrival 9:35 AM Paris Gare de l'Est · 2h 38min direct. 1st Class · Coach 13 · Seats 308 (lower deck, window), 307 (lower deck, corridor), 311 (lower deck, window). Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Bar, WiFi, electrical outlets. Connects to Eurostar 9023 (1h 37min connection — Eurostar check-in closes 10:42 AM).",
+      notes: "Thu Jul 9 · Departure 6:57 AM Ringsheim/Europa-Park · Arrival 9:35 AM Paris Gare de l'Est · 2h 38min direct. 1st Class · Coach 13 · Seats 308 (lower deck, window), 307 (lower deck, corridor), 311 (lower deck, window). Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Bar, WiFi, electrical outlets. 📲 All 3 tickets saved in Apple Wallet (offline). Connects to Eurostar 9023 (1h 37min connection — Eurostar check-in closes 10:42 AM).",
     },
     {
       name: "Hotel Krønasår — Europa-Park Package",
@@ -130,7 +130,7 @@ export default function CancellationPolicies() {
       refund: "Refund to original payment, up to 28 days processing",
       flexibility: "check",
       status: "booked",
-      notes: "Thu Jul 9 · Departure 11:12 AM Paris Gare du Nord · Arrival 12:30 PM London St Pancras · 2h 18min. 1st Class · Coach 14 · Seats 63, 64, 68. Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Bar onboard. Check-in/passport closes 30 min before departure (10:42 AM). Connects from TGV INOUI 9530 (arrives Paris Gare de l'Est 9:35 AM — 5-min walk to Gare du Nord, ~1h 37min total connection). Exchanges typically free up to 1 hour before departure (pay any fare difference). Verify exact fare class on eurostar.com under 'Manage my booking'.",
+      notes: "Thu Jul 9 · Departure 11:12 AM Paris Gare du Nord · Arrival 12:30 PM London St Pancras · 2h 18min. 1st Class · Coach 14 · Seats 63, 64, 68. Booked for Theodore Cromwell, Catrina Cromwell, Preston Cromwell. Bar onboard. 📲 All 3 tickets saved in Apple Wallet (offline) — but still carry passports for UK border control. Check-in/passport closes 30 min before departure (10:42 AM). Connects from TGV INOUI 9530 (arrives Paris Gare de l'Est 9:35 AM — 5-min walk to Gare du Nord, ~1h 37min total connection). Exchanges typically free up to 1 hour before departure (pay any fare difference). Verify exact fare class on eurostar.com under 'Manage my booking'.",
     },
     {
       name: "Andaz London Liverpool Street",
@@ -271,7 +271,7 @@ export default function CancellationPolicies() {
           </div>
           <div className="cost-row odd">
             <span className="cost-row-label">Jun 28 — OUIGO 7897 tickets downloadable</span>
-            <span className="cost-row-value">Save all 3 in the OUIGO app (offline)</span>
+            <span className="cost-row-value">✅ DONE — all 3 saved in Apple Wallet</span>
           </div>
           <div className="cost-row even">
             <span className="cost-row-label">Jun 30 — Hyatt Place CDG (Jul 1 night)</span>
