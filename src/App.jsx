@@ -15,7 +15,15 @@ export default function App() {
   const [activeDay, setActiveDay] = useState(1)
   // panel: null = day view, otherwise a Summary/Cheat-Sheet view id
   const [panel, setPanel] = useState(null)
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  // Open by default on desktop, collapsed (off-canvas) by default on mobile
+  const [sidebarOpen, setSidebarOpen] = useState(() =>
+    typeof window === 'undefined' ? true : window.innerWidth > 640
+  )
+
+  const isMobile = () => typeof window !== 'undefined' && window.innerWidth <= 640
+  // On mobile, picking an item should close the drawer so the content is visible
+  const chooseDay = (n) => { setActiveDay(n); setPanel(null); if (isMobile()) setSidebarOpen(false) }
+  const choosePanel = (p) => { setPanel(p); if (isMobile()) setSidebarOpen(false) }
 
   const day = DAYS.find(d => d.num === activeDay)
 
@@ -31,6 +39,25 @@ export default function App() {
 
   return (
     <div className="app">
+      {/* Mobile top bar with hamburger (hidden on desktop) */}
+      <header className="mobile-topbar">
+        <button
+          className="mobile-hamburger"
+          onClick={() => setSidebarOpen(o => !o)}
+          aria-label={sidebarOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={sidebarOpen}
+        >
+          {sidebarOpen ? '✕' : '☰'}
+        </button>
+        <span className="mobile-topbar-title">EUROPE 2026</span>
+      </header>
+
+      {/* Backdrop behind the drawer on mobile */}
+      <div
+        className={`sidebar-backdrop ${sidebarOpen ? 'show' : ''}`}
+        onClick={() => setSidebarOpen(false)}
+      />
+
       {/* Sidebar */}
       <aside className={`sidebar ${sidebarOpen ? 'open' : 'closed'}`}>
         <div className="sidebar-header">
@@ -64,7 +91,7 @@ export default function App() {
                         background: seg.color,
                         borderColor: seg.color,
                       } : { borderColor: seg.color + '40' }}
-                      onClick={() => { setActiveDay(n); setPanel(null) }}
+                      onClick={() => chooseDay(n)}
                     >
                       <span className="day-btn-num" style={
                         isActive ? {} : { color: seg.color }
@@ -83,7 +110,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'costs' ? 'active' : ''}`}
               style={panel === 'costs' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => setPanel('costs')}
+              onClick={() => choosePanel('costs')}
             >
               <span className="day-btn-num" style={panel === 'costs' ? {} : { color: '#C9A84C' }}>💰</span>
               <span className="day-btn-date">Costs</span>
@@ -92,7 +119,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'policies' ? 'active' : ''}`}
               style={panel === 'policies' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => setPanel('policies')}
+              onClick={() => choosePanel('policies')}
             >
               <span className="day-btn-num" style={panel === 'policies' ? {} : { color: '#C9A84C' }}>📋</span>
               <span className="day-btn-date">Bookings</span>
@@ -101,7 +128,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'phones' ? 'active' : ''}`}
               style={panel === 'phones' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
-              onClick={() => setPanel('phones')}
+              onClick={() => choosePanel('phones')}
             >
               <span className="day-btn-num" style={panel === 'phones' ? {} : { color: '#C9A84C' }}>📱</span>
               <span className="day-btn-date">Phones</span>
@@ -114,7 +141,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'disneyland' ? 'active' : ''}`}
               style={panel === 'disneyland' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
-              onClick={() => setPanel('disneyland')}
+              onClick={() => choosePanel('disneyland')}
             >
               <span className="day-btn-num" style={panel === 'disneyland' ? {} : { color: '#2E7D32' }}>🏰</span>
               <span className="day-btn-date">Parks</span>
@@ -123,7 +150,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'europapark' ? 'active' : ''}`}
               style={panel === 'europapark' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
-              onClick={() => setPanel('europapark')}
+              onClick={() => choosePanel('europapark')}
             >
               <span className="day-btn-num" style={panel === 'europapark' ? {} : { color: '#2E7D32' }}>🎢</span>
               <span className="day-btn-date">Parks</span>
@@ -132,7 +159,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'paris' ? 'active' : ''}`}
               style={panel === 'paris' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
-              onClick={() => setPanel('paris')}
+              onClick={() => choosePanel('paris')}
             >
               <span className="day-btn-num" style={panel === 'paris' ? {} : { color: '#2E7D32' }}>🗼</span>
               <span className="day-btn-date">City</span>
@@ -141,7 +168,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'london' ? 'active' : ''}`}
               style={panel === 'london' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
-              onClick={() => setPanel('london')}
+              onClick={() => choosePanel('london')}
             >
               <span className="day-btn-num" style={panel === 'london' ? {} : { color: '#2E7D32' }}>🎡</span>
               <span className="day-btn-date">City</span>
@@ -150,7 +177,7 @@ export default function App() {
             <button
               className={`day-btn ${panel === 'dublin' ? 'active' : ''}`}
               style={panel === 'dublin' ? { background: '#2E7D32', borderColor: '#2E7D32' } : { borderColor: '#2E7D3240' }}
-              onClick={() => setPanel('dublin')}
+              onClick={() => choosePanel('dublin')}
             >
               <span className="day-btn-num" style={panel === 'dublin' ? {} : { color: '#2E7D32' }}>☘️</span>
               <span className="day-btn-date">City</span>
