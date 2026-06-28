@@ -154,7 +154,7 @@ export default function CancellationPolicies() {
       refund: "None — date exchange possible at theatre's discretion (£2/ticket admin fee)",
       flexibility: "none",
       status: "booked",
-      notes: "Booking ref ACA67366. Fri 10 Jul, 7:30 PM. Royal Circle seats G16, G17, G18. E-Tickets. Contact boxoffice@shaftesburytheatre.com for possible date exchange.",
+      notes: "Booking ref ACA67366. Fri 10 Jul, 7:30 PM. Royal Circle seats G16, G17, G18. 📲 All 3 tickets saved in Apple Wallet (offline). Contact boxoffice@shaftesburytheatre.com for possible date exchange.",
     },
     {
       name: "Iron Maiden EDDFEST — Knebworth",
