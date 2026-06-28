@@ -112,13 +112,13 @@ export default function CancellationPolicies() {
       name: "Hotel Krønasår — Europa-Park Package",
       date: "Jul 6–9",
       type: "hotel",
-      paid: "€1,666.05 (~$1,833) cash (3 nights + 2-day park)",
-      deadline: "3 days before (Jul 3) — or 29 days if promo rate (Jun 7)",
-      penalty: "Standard: none if 3+ days. Promo: €50 fee if 29+ days, full forfeit inside 29 days.",
-      refund: "Refund to original payment or voucher",
+      paid: "✅ €1,666.05 (~$1,833) — PAID IN FULL (3 nights + 2-day park)",
+      deadline: "Paid in full Jun 28 — cancellation per resort terms",
+      penalty: "Standard: none if 3+ days before. Promo: €50 fee if 29+ days, full forfeit inside 29 days.",
+      refund: "Refund to original Visa if cancelled within the resort's terms",
       flexibility: "check",
       status: "booked",
-      notes: "Reservation #H14296598. Payment due by Jul 2. Check MEINE REISE portal for tickets, extras, and digital room key. Contact: +49 7822 860-5679 / hotel@europapark.de",
+      notes: "Reservation #H14296598. ✅ PAID IN FULL on Jun 28, 2026 — €1,666.05 advance payment (Visa ending 9976, transID 63918268151053808814296598). Covers the room + the Europa-Park 2-day tickets. Check the MEINE REISE portal for tickets, extras, and digital room key. Contact: +49 7822 860-5679 / hotel@europapark.de · accounting.hotel@europapark.de",
     },
     {
       name: "Eurostar 9023 — Paris → London (1st Class)",
@@ -279,7 +279,7 @@ export default function CancellationPolicies() {
           </div>
           <div className="cost-row odd">
             <span className="cost-row-label">Jul 2 — Krønasår payment due</span>
-            <span className="cost-row-value">€1,666.05 (~$1,833)</span>
+            <span className="cost-row-value">✅ PAID IN FULL Jun 28 — €1,666.05</span>
           </div>
           <div className="cost-row even">
             <span className="cost-row-label">Jul 2 — Eurostar (Standard fare)</span>

@@ -54,7 +54,10 @@ export default function CostSummary() {
           <div className="cost-table">
             {section.items.map((item, ii) => (
               <div key={ii} className={`cost-row ${ii % 2 === 0 ? 'even' : 'odd'}`}>
-                <span className="cost-row-label">{item.label}</span>
+                <span className="cost-row-label">
+                  {item.paid && <span className="paid-check" title="Paid / booked">✓</span>}
+                  {item.label}
+                </span>
                 <span className="cost-row-value">{item.cost}</span>
               </div>
             ))}
@@ -94,7 +97,7 @@ export default function CostSummary() {
             <span>~$440–490</span>
           </div>
           <div className="gt-row">
-            <span>Disney package (Sequoia Lodge + 4-day tickets)</span>
+            <span>✅ Disney package (Sequoia Lodge + 4-day tickets)</span>
             <span>$2,554.98</span>
           </div>
           <div className="gt-row">
@@ -102,15 +105,15 @@ export default function CostSummary() {
             <span>$476.25 net</span>
           </div>
           <div className="gt-row">
-            <span>Hôtel Le Milie Rose Paris (1 night, 2 rooms — Superior Double + Superior Twin)</span>
+            <span>✅ Hôtel Le Milie Rose Paris (1 night, 2 rooms — Superior Double + Superior Twin)</span>
             <span>€394 (~$433)</span>
           </div>
           <div className="gt-row">
-            <span>Hotel Krønasår (2 nights + 2-day park)</span>
+            <span>✅ Hotel Krønasår (2 nights + 2-day park)</span>
             <span>$1,497</span>
           </div>
           <div className="gt-row">
-            <span>Andaz London Liverpool St (3 nights — points)</span>
+            <span>✅ Andaz London Liverpool St (3 nights — points)</span>
             <span className="gt-pts">75,000 Hyatt pts (25K/night)</span>
           </div>
           <div className="gt-row">
