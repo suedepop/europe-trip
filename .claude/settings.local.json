@@ -10,7 +10,12 @@
       "WebFetch(domain:www.roissypole.info)",
       "WebFetch(domain:www.parcasterix.fr)",
       "WebFetch(domain:www.ironmaiden.knebworth.com)",
-      "WebFetch(domain:www.cartandhorses.london)"
+      "WebFetch(domain:www.cartandhorses.london)",
+      "WebFetch(domain:www.hyatt.com)",
+      "WebFetch(domain:www.grand-roissy-tourisme.com)",
+      "WebFetch(domain:www.iledefrance-mobilites.fr)",
+      "WebFetch(domain:parisbytrain.com)",
+      "WebFetch(domain:www.europapark.de)"
     ]
   }
 }
