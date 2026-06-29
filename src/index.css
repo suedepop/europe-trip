@@ -623,6 +623,43 @@ body { font-family: var(--font-body); background: #0F1A2E; color: #222; }
 .cs-rules ul { margin: 0; padding-left: 18px; }
 .cs-rules li { font-size: 12.5px; margin: 4px 0; color: #444; line-height: 1.45; }
 
+.cs-mustdo {
+  margin: 14px 24px 6px;
+  background: #fff;
+  border: 1px solid #E6DFC9;
+  border-radius: 10px;
+  padding: 13px 16px;
+}
+.cs-mustdo h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: var(--navy);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.cs-mustdo-group { margin-top: 12px; }
+.cs-mustdo-group:first-of-type { margin-top: 0; }
+.cs-mustdo-glabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.cs-mustdo-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.cs-mustdo-item {
+  background: var(--gold-light);
+  border: 1px solid var(--gold);
+  color: var(--navy);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
 .cs-day { margin: 24px 24px 0; }
 .cs-day-head {
   display: flex;

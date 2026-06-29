@@ -21,6 +21,32 @@ export default function EuropaParkCheatSheet() {
     { tier: 'low',      text: 'Low — basically walk-on anytime' },
   ]
 
+  // "Must-do" attractions list
+  const mustDo = [
+    "Alpine Express 'Enzian'",
+    'Arthur',
+    'Atlantica Supersplash',
+    'Atlantis Adventure',
+    'blue fire Megacoaster',
+    "Cassandra's Curse",
+    'Castello dei Medici',
+    'Euro-Mir',
+    'Eurosat',
+    'Fjord-Rafting',
+    'Grand Prix Edventure',
+    'Madame Freudenreich Curiosités',
+    'Matterhorn-Blitz',
+    'Piccolo Mondo',
+    'Pirates in Batavia',
+    'Silver Star',
+    'Swiss Bob Run',
+    'Tirol Log Flume',
+    'Voletarium',
+    'Voltron Nevera',
+    'Poseidon',
+    'Wodan',
+  ]
+
   const openingMove = [
     [<><b>9:00 sharp:</b> open the app and book a VirtualLine for <b>Voltron Nevera</b> — the park's #1 bottleneck and the one slot most worth locking in.</>],
     [<><b>Then walk on the rest:</b> head straight to <b>blue fire</b> and <b>WODAN</b> (side by side in Iceland) before lines build — or to whichever headliner is nearest your entry point.</>],
@@ -149,6 +175,16 @@ export default function EuropaParkCheatSheet() {
           <ol>
             {openingMove.map((m, i) => <li key={i}>{m}</li>)}
           </ol>
+        </div>
+
+        {/* Must-do attractions */}
+        <div className="cs-mustdo">
+          <h3>★ Must-Do Attractions</h3>
+          <div className="cs-mustdo-list">
+            {mustDo.map((r, ri) => (
+              <span key={ri} className="cs-mustdo-item">{r}</span>
+            ))}
+          </div>
         </div>
 
         {/* Tiers */}

@@ -21,6 +21,38 @@ export default function DisneylandCheatSheet() {
     [<strong>Re-ride at night.</strong>, ' Many lines collapse during the parade and after 9pm.'],
   ]
 
+  // "Must-do" attraction lists by park
+  const mustDo = [
+    {
+      label: 'Disneyland Park (Fri 7/3)',
+      rides: [
+        'Pirates of the Caribbean',
+        '"it\'s a small world"',
+        'Big Thunder Mountain',
+        'Indiana Jones and the Temple of Peril',
+        'Phantom Manor',
+        'Star Tours',
+        'Hyperspace Mountain',
+        'Les Voyages de Pinocchio',
+        'Peter Pan',
+        'Blanche-Neige at les Sept Nains',
+      ],
+    },
+    {
+      label: 'Disney Adventure World (Sat 7/4)',
+      rides: [
+        'Avengers Assemble: Flight Force',
+        'Cars: Road Trip',
+        "Crush's Coaster",
+        'Frozen Ever After',
+        'RC Racer',
+        'Ratatouille',
+        'Spider-Man W.E.B. Adventure',
+        'Tower of Terror',
+      ],
+    },
+  ]
+
   const days = [
     {
       badge: 'Fri 7/3',
@@ -169,6 +201,21 @@ export default function DisneylandCheatSheet() {
           <ul>
             {rules.map((r, i) => <li key={i}>{r}</li>)}
           </ul>
+        </div>
+
+        {/* Must-do attractions */}
+        <div className="cs-mustdo">
+          <h3>★ Must-Do Attractions</h3>
+          {mustDo.map((g, gi) => (
+            <div key={gi} className="cs-mustdo-group">
+              <div className="cs-mustdo-glabel">{g.label}</div>
+              <div className="cs-mustdo-list">
+                {g.rides.map((r, ri) => (
+                  <span key={ri} className="cs-mustdo-item">{r}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Days */}
