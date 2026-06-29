@@ -4,6 +4,7 @@ import DayView from './components/DayView'
 import CostSummary from './components/CostSummary'
 import CancellationPolicies from './components/CancellationPolicies'
 import CellPhones from './components/CellPhones'
+import TravelDocuments from './components/TravelDocuments'
 import SummaryGate from './components/SummaryGate'
 import DisneylandCheatSheet from './components/DisneylandCheatSheet'
 import EuropaParkCheatSheet from './components/EuropaParkCheatSheet'
@@ -134,6 +135,15 @@ export default function App() {
               <span className="day-btn-date">Phones</span>
               <span className="day-btn-title">Cell Phones</span>
             </button>
+            <button
+              className={`day-btn ${panel === 'documents' ? 'active' : ''}`}
+              style={panel === 'documents' ? { background: '#C9A84C', borderColor: '#C9A84C' } : { borderColor: '#C9A84C40' }}
+              onClick={() => choosePanel('documents')}
+            >
+              <span className="day-btn-num" style={panel === 'documents' ? {} : { color: '#C9A84C' }}>🛂</span>
+              <span className="day-btn-date">Docs</span>
+              <span className="day-btn-title">Travel Documents</span>
+            </button>
           </div>
 
           <div className="seg-group">
@@ -195,6 +205,8 @@ export default function App() {
           <SummaryGate><CancellationPolicies /></SummaryGate>
         ) : panel === 'phones' ? (
           <SummaryGate><CellPhones /></SummaryGate>
+        ) : panel === 'documents' ? (
+          <SummaryGate><TravelDocuments /></SummaryGate>
         ) : panel === 'disneyland' ? (
           <DisneylandCheatSheet />
         ) : panel === 'europapark' ? (
